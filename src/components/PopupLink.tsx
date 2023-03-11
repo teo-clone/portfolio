@@ -6,7 +6,7 @@ export interface PopupLinkProps {
 }
 
 const PopupLink = (props: PopupLinkProps) => (
-    <a className={"text-sm italic underline"} href={props.url}>
+    <a className={"italic underline"} href={props.url}>
         {props.label}
     </a>
 )

@@ -1,5 +1,5 @@
 import * as React from "react"
-import ThumbnailSection from "./ToolboxSection"
+import ToolboxSection from "./ToolboxSection"
 
 const items = [
     "Figma",
@@ -9,7 +9,7 @@ const items = [
 ]
 
 const ToolboxDesignSection = () => (
-    <ThumbnailSection
+    <ToolboxSection
         title={"DESIGN"}
         items={items}
     />

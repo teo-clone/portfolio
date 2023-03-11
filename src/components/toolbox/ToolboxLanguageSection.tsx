@@ -1,5 +1,5 @@
 import * as React from "react"
-import ThumbnailSection from "./ToolboxSection"
+import ToolboxSection from "./ToolboxSection"
 
 const items = [
     "Greek",
@@ -8,7 +8,7 @@ const items = [
 ]
 
 const ToolboxLanguageSection = () => (
-    <ThumbnailSection
+    <ToolboxSection
         title={"LANGUAGES"}
         items={items}
     />

@@ -5,13 +5,9 @@ import linkedin from "../images/linkedin.png"
 
 
 const Footer = () => (
-    <div className={"flex gap-[15px] py-[50px] grow justify-center text-sm"}>
+    <div className={"flex gap-[20px] py-[50px] grow justify-center text-sm"}>
         <div>
             theodore.tsivranidis@gmail.com
-        </div>
-        <div className={"flex items-center gap-[5px]"}>
-            <img src={git} />
-            github.com/ttsivran
         </div>
         <div className={"flex items-center gap-[5px]"}>
             <img src={insta} />

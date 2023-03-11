@@ -3,20 +3,32 @@ import ScrollyButton from "./ScrollyButton"
 
 const Header = () => (
     <div className={"text-lg sticky top-0 bg-white z-50"}>
-        <div className="border-b-[1px] border-[#393939] px-[20px] py-[25px]">
-            <div className="flex">
-                <div className="font-bold">Teo Tsivranidis</div>
+        <div className="border-b border-[#393939] px-[20px] py-[25px]">
+            <div className="flex justify-between">
+                <input
+                    type="button"
+                    className={"font-bold"}
+                    onClick={() => {
+                        window.scrollTo({
+                            top: 0,
+                            behavior: "smooth"
+                        });
+                    }}
+                    value={"Teo Tsivranidis"}
+                />
 
-                <ScrollyButton
-                    label="projects"
-                    sectionID="projects"
-                    color="text-blue"
-                />
-                <ScrollyButton
-                    label="about"
-                    sectionID="about"
-                    color="text-green"
-                />
+                <div className="flex gap-[15px]">
+                    <ScrollyButton
+                        label="projects"
+                        sectionID="projects"
+                        color="blue"
+                    />
+                    <ScrollyButton
+                        label="about"
+                        sectionID="about"
+                        color="green"
+                    />
+                </div>
             </div>
         </div>
     </div>
