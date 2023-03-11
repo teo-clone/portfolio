@@ -6,6 +6,8 @@ export interface ScrollyButtonProps {
     color?: string // TODO: make this have an effect lol
 }
 
+// hello
+
 const ScrollyButton = (props: ScrollyButtonProps) => (
     <input
         type="button"
