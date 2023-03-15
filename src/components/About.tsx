@@ -7,15 +7,15 @@ import ToolboxDesignSection from "./toolbox/ToolboxDesignSection"
 import ToolboxLanguageSection from "./toolbox/ToolboxLanguageSection"
 
 const About = () => (
-    <div id="about" className="flex flex-col grow border-y border-[#5CD595]">
+    <div id="about" className="border-green">
 
-        <div className="flex wrap">
-            <div id="left" className="w-[50%] p-[10px] border-r border-[#5CD595]">
+        <div className="grid md:grid-cols-2 grid-cols-1">
+            <div id="left" className="p-[10px] w-full border-t border-r">
                 {/* <img src={me} /> */}
                 <img src={older_teo} />
             </div>
 
-            <div id="right" className="w-[50%] flex flex-col gap-[10px] py-[25px] px-[50px] max-w-[400px]">
+            <div id="right" className="border-t flex flex-col gap-[10px] py-[25px] px-[50px] max-w-[400px]">
                 <div>
                     Γεια!
                 </div>
@@ -39,11 +39,11 @@ const About = () => (
         </div>
 
         <div className="flex wrap grow flex-col">
-            <div className="border-t py-[10px] px-[25px] border-[#5CD595] font-bold">
+            <div className="border-t py-[10px] px-[25px] font-bold">
                 TOOLBOX
             </div>
 
-            <div className="flex grow border-t border-[#5CD595]">
+            <div className="flex grow border-t border-b">
                 <ToolboxDesignSection />
 
                 <ToolboxCodeSection />

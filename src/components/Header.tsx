@@ -3,7 +3,7 @@ import ScrollyButton from "./ScrollyButton"
 
 const Header = () => (
     <div className={"text-lg sticky top-0 bg-white z-50"}>
-        <div className="border-b border-[#393939] px-[20px] py-[25px]">
+        <div className="border-b border-black px-[20px] py-[25px]">
             <div className="flex justify-between">
                 <input
                     type="button"

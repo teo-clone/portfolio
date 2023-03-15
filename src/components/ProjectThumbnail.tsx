@@ -9,14 +9,11 @@ export interface ProjectThumbnailProps {
     images: ImageProps[],
 }
 
-// TODO: componentify to hide more tailwind classes and to be sure that they all change the same !!
-
 const ProjectThumbnail = (props: ProjectThumbnailProps) => (
-    <div className="flex grow first:border-t border-b border-[#3B8BEB]">
-
-        <div id="left" className="w-[50%] border-r border-[#3B8BEB]">
+    <>
+        <div id="left" className="border-r border-b">
             <div className="flex flex-col">
-                <div className="flex justify-between px-[20px] py-[25px] border-b border-[#3B8BEB]">
+                <div className="flex justify-between px-[20px] py-[25px] border-b">
                     <div className="font-bold">
                         {props.title}
                     </div>
@@ -30,7 +27,7 @@ const ProjectThumbnail = (props: ProjectThumbnailProps) => (
             </div>
         </div>
 
-        <div id="right" className="w-[50%]">
+        <div id="right" className="border-b">
             <div className="px-[20px] py-[25px]">
                 <div>
                     <Carousel
@@ -39,8 +36,7 @@ const ProjectThumbnail = (props: ProjectThumbnailProps) => (
                 </div>
             </div>
         </div>
-
-    </div>
+    </>
 )
 
 export default ProjectThumbnail

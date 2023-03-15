@@ -7,10 +7,10 @@ export interface ToolboxSectionProps {
 
 const ToolboxSection = (props: ToolboxSectionProps) => (
     <div>
-        <div className="py-[10px] px-[25px] border-r border-b border-[#5CD595] font-bold">
+        <div className="py-[10px] px-[25px] border-r border-b font-bold">
             {props.title}
         </div>
-        <div className="py-[10px] px-[25px] flex flex-wrap gap-[30px] border-r border-[#5CD595]">
+        <div className="py-[10px] px-[25px] flex flex-wrap gap-[30px] border-r">
             {props.items.map((item) =>
                 <div>{item}</div>
             )}

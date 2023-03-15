@@ -57,7 +57,7 @@ const projectProps = [
 ]
 
 const Projects = () => (
-    <div id="projects" className="flex flex-col">
+    <div id="projects" className="border-blue grid md:grid-cols-2 grid-cols-1 first:border-t">
         {projectProps.map((props) =>
             <ProjectThumbnail
                 key={props.title}

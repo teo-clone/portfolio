@@ -3,12 +3,15 @@ import * as React from "react"
 export interface ScrollyButtonProps {
     label: string,
     sectionID: string,
-    color?: string // TODO: make this have an effect lol
+    color: string // TODO: make this have an effect lol
 }
 
 const ScrollyButton = (props: ScrollyButtonProps) => {
 
-    const classNames = ["text-" + props.color, "px-[10px]", "border", "rounded-full", "border-" + props.color]
+    const colorVariants = new Map([
+        ["blue", "text-blue border-blue"],
+        ["green", "text-green border-green"],
+    ])
 
     const scrollToSection = () => {
         var headerOffset = 80;
@@ -23,7 +26,7 @@ const ScrollyButton = (props: ScrollyButtonProps) => {
 
     return <input
         type="button"
-        className={classNames.join(" ")}
+        className={`${colorVariants.get(props.color)} px-[10px] border rounded-full`}
         onClick={scrollToSection}
         value={props.label}
     />;
