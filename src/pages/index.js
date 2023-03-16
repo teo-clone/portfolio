@@ -9,7 +9,7 @@ const HomePage = () => (
     <Header />
 
     <div className="px-[20px] py-[35px]">
-      <div>Software developer and designer based out of Brooklyn, NY</div>
+      <div>Software developer and designer currently in Brooklyn, NY</div>
     </div>
 
     <div className="flex flex-col gap-[40px]">
