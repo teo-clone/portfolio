@@ -1,8 +1,10 @@
 import * as React from "react"
+import { Link } from "gatsby"
 
 import Carousel, { ImageProps } from "./Carousel"
 
 export interface ProjectThumbnailProps {
+    fullInfoUrl: string,
     title: string,
     timeline: string,
     description: string,
@@ -21,8 +23,9 @@ const ProjectThumbnail = (props: ProjectThumbnailProps) => (
                         {props.timeline}
                     </div>
                 </div>
-                <div className="max-w-[400px] px-[20px] py-[25px]">
+                <div className="max-w-[400px] px-[20px] py-[25px] flex flex-col gap-10">
                     {props.description}
+                    <Link to={props.fullInfoUrl}>{"More >>"}</Link>
                 </div>
             </div>
         </div>

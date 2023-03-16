@@ -1,8 +1,6 @@
 import * as React from "react"
-import { useEffect } from "react"
-import blue_ellipse from "../images/blue_ellipse.png"
-import green_elipse from "../images/green_ellipse.png"
-
+import blue_ellipse from "../../images/blue_ellipse.png"
+import green_elipse from "../../images/green_ellipse.png"
 
 export interface ScrollyButtonProps {
     label: string,

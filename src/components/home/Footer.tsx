@@ -1,8 +1,7 @@
 import * as React from "react"
-import git from "../images/git.png"
-import insta from "../images/insta.png"
-import linkedin from "../images/linkedin.png"
-
+import git from "../../images/git.png"
+import insta from "../../images/insta.png"
+import linkedin from "../../images/linkedin.png"
 
 const Footer = () => (
     <div className={"flex md:flex-row flex-col gap-[20px] py-[50px] grow justify-center items-center text-sm"}>

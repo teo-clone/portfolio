@@ -1,6 +1,6 @@
 import * as React from "react"
-import me from "../images/me.jpg"
-import older_teo from "../images/older_teo.jpg"
+import me from "../../images/me.jpg"
+import older_teo from "../../images/older_teo.jpg"
 import PopupLink from "./PopupLink"
 import ToolboxCodeSection from "./toolbox/ToolboxCodeSection"
 import ToolboxDesignSection from "./toolbox/ToolboxDesignSection"

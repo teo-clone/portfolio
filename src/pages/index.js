@@ -1,8 +1,8 @@
 import * as React from "react"
-import Header from "../components/Header"
-import Projects from "../components/Projects"
-import About from "../components/About"
-import Footer from "../components/Footer"
+import Header from "../components/home/Header"
+import Projects from "../components/home/Projects"
+import About from "../components/home/About"
+import Footer from "../components/home/Footer"
 
 const HomePage = () => (
   <div>

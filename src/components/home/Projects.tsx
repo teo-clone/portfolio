@@ -1,16 +1,17 @@
 import * as React from "react"
-import ProjectThumbnail from "../components/ProjectThumbnail"
+import ProjectThumbnail from "./ProjectThumbnail"
 
-import a360_event from "../images/a360/a360_event.png"
-import a360_watcher from "../images/a360/a360_watcher.png"
-import a360_aggregate from "../images/a360/a360_aggregate.png"
+import a360_event from "../../images/a360/a360_event.png"
+import a360_watcher from "../../images/a360/a360_watcher.png"
+import a360_aggregate from "../../images/a360/a360_aggregate.png"
 
-import intus_home from "../images/intus/intus_home.png"
-import intus_appt_summary from "../images/intus/intus_appt_summary.png"
-import intus_new from "../images/intus/intus_new.png"
+import intus_home from "../../images/intus/intus_home.png"
+import intus_appt_summary from "../../images/intus/intus_appt_summary.png"
+import intus_new from "../../images/intus/intus_new.png"
 
 const projectProps = [
     {
+        fullInfoUrl: "/a360",
         title: "ACTIVE>360",
         timeline: "2020 - PRESENT",
         description: "Working full-time as a (mostly) frontend developer and UI designer on a real time event processing application.",
@@ -33,6 +34,7 @@ const projectProps = [
         ]
     },
     {
+        fullInfoUrl: "/intus",
         title: "INTUS CARE",
         timeline: "2018 - 2020",
         description: "Founding member, full-stack developer and UI designer for an awarded health care startup.",
