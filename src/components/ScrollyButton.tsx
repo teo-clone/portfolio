@@ -43,7 +43,7 @@ const ScrollyButton = (props: ScrollyButtonProps) => {
             className={`${colorVariants.get(props.color)} relative text-center`}
         >
             <img
-                className={"h-[33px] w-[100px]"}
+                className={"h-[33px] w-[90px]"}
                 src={imageVariants.get(props.color)}
             />
             <div

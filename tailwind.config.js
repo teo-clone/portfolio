@@ -12,6 +12,9 @@ module.exports = {
         'blue': '#3B8BEB',
         'green': '#5CD595',
       },
+      screens: {
+        'xsm': '395px',
+      }
     }
   },
   plugins: [],
