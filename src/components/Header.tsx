@@ -38,7 +38,7 @@ const Header = () => {
                     value={"Teo Tsivranidis"}
                 />
 
-                <div className="flex gap-[15px]">
+                <div className="flex gap-[10px]">
                     <ScrollyButton
                         label="projects"
                         sectionID="projects"
