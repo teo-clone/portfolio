@@ -11,8 +11,8 @@ const ToolboxSection = (props: ToolboxSectionProps) => (
             {props.title}
         </div>
         <div className="py-[10px] px-[25px] flex flex-wrap grow gap-[30px] border-r">
-            {props.items.map((item) =>
-                <div>{item}</div>
+            {props.items.map((item, i) =>
+                <div key={i}>{item}</div>
             )}
         </div>
     </div>
