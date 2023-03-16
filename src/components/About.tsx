@@ -10,30 +10,32 @@ const About = () => (
     <div id="about" className="border-green">
 
         <div className="grid md:grid-cols-2 grid-cols-1">
-            <div id="left" className="p-[10px] w-full border-t border-r">
+            <div id="left" className="p-[10px] w-full border-t md:border-r">
                 {/* <img src={me} /> */}
                 <img src={older_teo} />
             </div>
 
-            <div id="right" className="border-t flex flex-col gap-[10px] py-[25px] px-[50px] max-w-[400px]">
-                <div>
-                    Γεια!
-                </div>
-                <div>
-                    My name is Theodoros Tsivranidis. My friends call me Teo.
-                </div>
-                <div>
-                    I currently work full time at Ab Initio as a software developer and UI designer.
-                </div>
-                <div>
-                    Before Ab Initio, I was at Brown University where I graduated with a Computer Science degree in 2020.
-                </div>
-                <div>
-                    When I am not working I am&nbsp;
-                    <PopupLink label={"cooking Greek food"} url={""} />,&nbsp;
-                    <PopupLink label={"X"} url={""} />,&nbsp;
-                    <PopupLink label={"Y"} url={""} />,&nbsp;
-                    <PopupLink label={"Z"} url={""} />.
+            <div id="right" className="border-t py-[25px] px-[25px]">
+                <div className="max-w-[400px] flex flex-col gap-[10px]">
+                    <div>
+                        Γεια!
+                    </div>
+                    <div>
+                        My name is Theodoros Tsivranidis. My friends call me Teo.
+                    </div>
+                    <div>
+                        I currently work full time at Ab Initio as a software developer and UI designer.
+                    </div>
+                    <div>
+                        Before Ab Initio, I was at Brown University where I graduated with a Computer Science degree in 2020.
+                    </div>
+                    <div>
+                        When I am not working I am&nbsp;
+                        <PopupLink label={"cooking Greek food"} url={""} />,&nbsp;
+                        <PopupLink label={"X"} url={""} />,&nbsp;
+                        <PopupLink label={"Y"} url={""} />,&nbsp;
+                        <PopupLink label={"Z"} url={""} />.
+                    </div>
                 </div>
             </div>
         </div>
@@ -43,7 +45,7 @@ const About = () => (
                 TOOLBOX
             </div>
 
-            <div className="flex grow border-t border-b">
+            <div className="flex grow md:flex-row flex-col border-t">
                 <ToolboxDesignSection />
 
                 <ToolboxCodeSection />

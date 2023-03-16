@@ -11,7 +11,7 @@ export interface ProjectThumbnailProps {
 
 const ProjectThumbnail = (props: ProjectThumbnailProps) => (
     <>
-        <div id="left" className="border-r border-b">
+        <div id="left" className="md:border-r border-b">
             <div className="flex flex-col">
                 <div className="flex justify-between px-[20px] py-[25px] border-b">
                     <div className="font-bold">
