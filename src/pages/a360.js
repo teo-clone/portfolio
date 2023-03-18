@@ -1,11 +1,9 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import ProjectTemplate from "../components/project/ProjectTemplate"
 
 const A360 = () => (
     <div className="flex flex-col gap-10">
-        {"This is the page for the Active>360 project!"}
-        {/* back to home button */}
-        <Link to="/">{"Back to home"}</Link>
+        <ProjectTemplate />
     </div >
 )
 

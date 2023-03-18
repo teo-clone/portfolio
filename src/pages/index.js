@@ -1,12 +1,12 @@
 import * as React from "react"
-import Header from "../components/home/Header"
+import HomeHeader from "../components/home/HomeHeader"
 import Projects from "../components/home/Projects"
 import About from "../components/home/About"
 import Footer from "../components/home/Footer"
 
 const HomePage = () => (
   <div>
-    <Header />
+    <HomeHeader />
 
     <div className="px-[20px] py-[35px]">
       <div>Software developer and designer currently in Brooklyn, NY</div>

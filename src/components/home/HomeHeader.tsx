@@ -1,8 +1,9 @@
 import * as React from "react"
 import { useEffect, useState } from "react";
+import Header from "../Header";
 import ScrollyButton from "./ScrollyButton"
 
-const Header = () => {
+const HomeHeader = () => {
     const [borderColor, setBorderColor] = useState("border-black");
 
     useEffect(() => {
@@ -28,31 +29,26 @@ const Header = () => {
         }
     };
 
-    return <div className={"text-lg sticky top-0 bg-white z-50"}>
-        <div className={`border-b ${borderColor} px-[20px] py-[25px]`}>
-            <div className="flex justify-between">
-                <input
-                    type="button"
-                    className={"font-bold"}
-                    onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-                    value={"Teo Tsivranidis"}
+    return <>
+        <Header
+            title="Teo Tsivranidis"
+            borderColor={borderColor}
+        >
+            <div className="flex gap-[10px]">
+                <ScrollyButton
+                    label="projects"
+                    sectionID="projects"
+                    color="blue"
                 />
-
-                <div className="flex gap-[10px]">
-                    <ScrollyButton
-                        label="projects"
-                        sectionID="projects"
-                        color="blue"
-                    />
-                    <ScrollyButton
-                        label="about"
-                        sectionID="about"
-                        color="green"
-                    />
-                </div>
+                <ScrollyButton
+                    label="about"
+                    sectionID="about"
+                    color="green"
+                />
             </div>
-        </div>
-    </div>
+        </Header>
+
+    </>
 }
 
-export default Header
+export default HomeHeader
