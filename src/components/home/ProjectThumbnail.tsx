@@ -32,11 +32,9 @@ const ProjectThumbnail = (props: ProjectThumbnailProps) => (
 
         <div id="right" className="border-b">
             <div className="px-[20px] py-[25px]">
-                <div>
-                    <Carousel
-                        images={props.images}
-                    />
-                </div>
+                <Carousel
+                    images={props.images}
+                />
             </div>
         </div>
     </>
