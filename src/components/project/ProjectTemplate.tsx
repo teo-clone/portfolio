@@ -1,9 +1,9 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import Header from "../Header"
-import ProjectSection from "./ProjectSection"
 import { PropsWithChildren } from "react"
 import x from "../../images/x.png"
+import KeyInfoSection from "./KeyInfoSection"
 
 export interface ProjectTemplateProps {
     title: string,
@@ -27,40 +27,32 @@ const ProjectTemplate = (props: PropsWithChildren<ProjectTemplateProps>) => (
             </Link>
         </Header>
 
-        {/** 
-            * TODO: move the grid grid-cols-[fit-content(100px)_auto] 
-            *       style which is in 3 places belowto some kind of 
-            *       SectionCollection component
-            */}
-
         <div className="border-blue grid md:grid-cols-2 grid-cols-1">
             <div id="left" className="md:border-r border-b px-[20px] py-[25px]">
-                <div className="grid grid-cols-[fit-content(100px)_auto] gap-[30px]">
-                    <ProjectSection
+                <div className={"flex flex-col gap-[15px]"}>
+                    <KeyInfoSection
                         title={"MY ROLE"}
-                        paragraphs={[props.role]}
+                        texts={[props.role]}
                     />
-                    <ProjectSection
+                    <KeyInfoSection
                         title={"TOOLKIT"}
-                        paragraphs={[props.toolkit]}
+                        texts={[props.toolkit]}
                     />
-                    <ProjectSection
+                    <KeyInfoSection
                         title={"TEAM"}
-                        paragraphs={[props.team]}
+                        texts={[props.team]}
                     />
                 </div>
             </div>
             <div id="right" className="border-b px-[20px] py-[25px]">
-                <div className="grid grid-cols-[fit-content(100px)_auto] gap-[30px]">
-                    <ProjectSection
+                <KeyInfoSection
                         title={"BRIEF"}
-                        paragraphs={props.briefParagraphs}
-                    />
-                </div>
+                    texts={props.briefParagraphs}
+                />
             </div>
         </div>
 
-        <div className="grid grid-cols-[fit-content(100px)_auto] gap-[30px] px-[20px] py-[25px]">
+        <div className="flex flex-col gap-[50px] px-[20px] py-[25px]">
             {props.children}
         </div>
     </div>
