@@ -34,12 +34,15 @@ const A360 = () => (
         <DetailsSection
             title={"INFRASTRUCTURE"}
             contents={[
-                { type: 'paragraph', value: "The application screens heavily rely on input forms like text inputs, dropdowns, and more. When I started working on the team the product was still very new, and we did not yet have fleshed out infrastructure for input components. I knew I wanted to make some input components that share common functionality." },
-                { type: 'paragraph', value: "The first step of abstraction was to create a BaseProperty, which knows to render a label and either an input component in edit mode or otherwise the property value." },
-                { type: 'paragraph', value: "On top of BaseProperty, I then built components like TextProperty, TextAreaProperty, DropdownProperty and CheckboxProperty which define the type of input form to render while in edit mode." },
+                { type: 'paragraph', value: "The application screens make extensive use of input forms such as text inputs, dropdowns, and others. To address this, I created input component infrastructure that abstracts common functionality." },
+                { type: 'paragraph', value: "To begin, I created a BaseProperty component that can render a label and either an input component in edit mode or display the property value otherwise." },
+                { type: 'paragraph', value: "Building on this, I developed more specific components like TextProperty, TextAreaProperty, DropdownProperty, and CheckboxProperty, which determine the type of input form to render in edit mode." },
                 { type: 'media', value: properties, mediaAlt: "Images of components described above", mediaType: "image" },
-                { type: 'paragraph', value: "BaseProperty also centralizes the shared validity / invalidity logic which is used to warn the user of possible issues with the value they have set, and also to disable saving an invalid object." },
-                { type: 'paragraph', value: "I ended up building a BusinessNameProperty and IdentifyingNameProperty which are instances of TextProperty that define the logic of how to validate a business name or identifying name." },
+                { type: 'paragraph', value: "The BaseProperty component also includes validity logic that renders an error decorator to warn the user of any possible issues with the input value." },
+                { type: 'paragraph', value: "Leveraging this functionality, I created specialized components such as BusinessNameProperty and IdentifyingNameProperty, both of which are built on top of TextProperty. These components centralize the logic for validating business names and identifying names." },
+                { type: 'paragraph', value: "[gifs of different types of errors related to business names and identifying names]" },
+                { type: 'paragraph', value: "[further advancements]" },
+                { type: 'paragraph', value: "[gif of an <EntityDropdown /> and a <FolderDropdown />, editing them and how they affect each other (unsetting and filtering), and deprecation warnings on both." },
             ]}
             tags={[
                 "typescript",
@@ -51,6 +54,7 @@ const A360 = () => (
             title={"UI DESIGN"}
             contents={[
                 { type: 'paragraph', value: "Computing Notification Fields in a Watcher" },
+                { type: 'paragraph', value: "[photos of mock iterations]" },
             ]}
             tags={[
                 "figma",

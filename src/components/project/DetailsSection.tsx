@@ -30,7 +30,6 @@ const DetailsSection = ({ title, contents, tags }: DetailsSectionProps) => (
                             {item.mediaType === 'image' ? (
                                 <img src={item.value} alt={item.mediaAlt} />
                             ) : (
-                                // TODO: why does autoPlay not work ?
                                 <video src={item.value} controls autoPlay muted />
                             )}
                         </div>
