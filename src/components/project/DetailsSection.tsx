@@ -1,11 +1,18 @@
 import * as React from "react"
 import Tag from "./Tag";
 
-export interface Content {
+export type Content = Paragraph | Media
+
+export type Paragraph = {
     type: string;
     value: string
-    mediaType?: string;
-    mediaAlt?: string;
+}
+
+export type Media = {
+    type: string;
+    src: string;
+    mediaType: string;
+    mediaAlt: string;
 }
 
 interface DetailsSectionProps {
@@ -22,16 +29,15 @@ const DetailsSection = ({ title, contents, tags }: DetailsSectionProps) => (
         <div className={"w-[100%] flex flex-col gap-[15px]"}>
             {contents.map((item, index) => (
                 <React.Fragment key={index}>
-                    {item.type === 'paragraph' && (
+                    {"value" in item && (
                         <p>{item.value}</p>
                     )}
-                    {item.type === 'media' && (
-                        <div className="media">
-                            {item.mediaType === 'image' ? (
-                                <img src={item.value} alt={item.mediaAlt} />
-                            ) : (
-                                <video src={item.value} controls autoPlay muted />
-                            )}
+                    {"src" in item && (
+                        <div className="media w-full">
+                            {item.mediaType === 'image'
+                                ? <img src={item.src} alt={item.mediaAlt} />
+                                : <video src={item.src} controls autoPlay muted />
+                            }
                         </div>
                     )}
                 </React.Fragment>
