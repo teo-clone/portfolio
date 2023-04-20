@@ -6,7 +6,7 @@ interface KeyInfoSectionProps {
 }
 
 const KeyInfoSection = ({ title, texts }: KeyInfoSectionProps) => (
-    <div className={"flex grow"}>
+    <div className={"flex flex-col md:flex-row gap-[15px] grow"}>
         <div className={"font-bold w-[120px]"}>
             <div>{title}</div>
         </div>

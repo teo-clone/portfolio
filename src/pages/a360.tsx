@@ -3,6 +3,7 @@ import DetailsSection from "../components/project/DetailsSection"
 import ProjectTemplate from "../components/project/ProjectTemplate"
 import event_create from "../images/a360/event_create.mp4"
 import properties from "../images/a360/properties.png"
+import ConstructionTape from "../components/ConstructionTape"
 
 const A360 = () => (
     <ProjectTemplate
@@ -31,6 +32,21 @@ const A360 = () => (
                 "cypress"
             ]}
         />
+        <ConstructionTape>
+            {/* Content to be displayed above construction tape */}
+            <h1>This is a construction zoneThis is a construction zoneThis is a construction zoneThis is a construction zoneThis is a construction zone</h1>
+        </ConstructionTape>
+        <div>
+            {/* <ConstructionTape> */}
+            <p>Line 1</p>
+            <p>Line 2</p>
+            <p>Line 3</p>
+            {/* Add more lines of text as needed */}
+            {/* </ConstructionTape> */}
+            <ConstructionTape>
+                <p>Sorry for the inconvenience</p>
+            </ConstructionTape>
+        </div>
         <DetailsSection
             title={"INFRASTRUCTURE"}
             contents={[

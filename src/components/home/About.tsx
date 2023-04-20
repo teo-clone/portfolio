@@ -8,6 +8,11 @@ import lulu from "../../images/amigos/lulu.png"
 import sani_crew from "../../images/amigos/sani_crew.png"
 import yi_yio from "../../images/amigos/yi_yio.png"
 import z2 from "../../images/amigos/z2.png"
+import thanos_kim from "../../images/amigos/thanos_kim.png"
+import teddy from "../../images/amigos/teddy.png"
+import oli from "../../images/amigos/oli.png"
+import don_toliver from "../../images/amigos/don_toliver.png"
+import rooftop_dining from "../../images/amigos/rooftop_dining.png"
 
 import PopupLink from "./PopupLink"
 import ToolboxCodeSection from "./toolbox/ToolboxCodeSection"
@@ -20,8 +25,8 @@ const About = () => (
 
         <div className="grid md:grid-cols-2 grid-cols-1">
             <div id="left" className="p-[10px] w-full border-t md:border-r">
-                {/* <img src={me} /> */}
-                <img src={older_teo} />
+                <img src={me} />
+                {/* <img src={older_teo} /> */}
             </div>
 
             <div id="right" className="border-t py-[25px] px-[25px]">
@@ -45,26 +50,21 @@ const About = () => (
                         <PopupLink label={"Z"} url={""} />.
                         <HoverGifinator
                             images={[
-                                giovanni,
-                                cec_cam,
-                                dave_tay_no,
-                                lulu,
-                                sani_crew,
-                                yi_yio,
-                                z2
-                            ]}
-                            sizeFactors={[
-                                1.2,
-                                0.8,
-                                1.4,
-                                0.9,
-                                1.1,
-                                0.7,
-                                1.3
+                                { src: rooftop_dining, sizeFactor: 0.8 },
+                                { src: giovanni, sizeFactor: 1.3 },
+                                { src: sani_crew, sizeFactor: 1.1 },
+                                { src: don_toliver, sizeFactor: 1.2 },
+                                { src: yi_yio, sizeFactor: 1.1 },
+                                { src: z2, sizeFactor: 1.3 },
+                                { src: thanos_kim, sizeFactor: 1 },
+                                { src: dave_tay_no, sizeFactor: 1.7 },
+                                { src: lulu, sizeFactor: 0.8 },
+                                { src: oli, sizeFactor: 0.9 },
+                                { src: cec_cam, sizeFactor: 1 },
+                                { src: teddy, sizeFactor: 0.9 },
                             ]}
                             label={"seeing friends"}
                         />
-
                     </div>
                 </div>
             </div>

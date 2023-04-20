@@ -1,5 +1,6 @@
 import * as React from "react"
 import Tag from "./Tag";
+import ConstructionTape from "../ConstructionTape";
 
 export type Content = Paragraph | Media
 
@@ -28,6 +29,8 @@ const DetailsSection = ({ title, contents, tags }: DetailsSectionProps) => (
         </div>
         <div className={"w-[100%] flex flex-col gap-[15px]"}>
             {contents.map((item, index) => (
+                // TODO: conditionally render construction tape based on whether inProgress is set to true on content piece
+                // <ConstructionTape>
                 <React.Fragment key={index}>
                     {"value" in item && (
                         <p>{item.value}</p>
@@ -41,6 +44,7 @@ const DetailsSection = ({ title, contents, tags }: DetailsSectionProps) => (
                         </div>
                     )}
                 </React.Fragment>
+                // </ConstructionTape>
             ))}
             <div className="flex wrap gap-[15px]">
                 {tags.map((tag, index) => (

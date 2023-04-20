@@ -1,37 +1,37 @@
 import React from 'react';
 
+type Image = {
+    src: string;
+    sizeFactor: number;
+};
+
 type HoverGifinatorProps = {
-    images: string[];
-    sizeFactors: number[];
+    images: Image[];
     label: string;
 };
 
-const HoverGifinator: React.FC<HoverGifinatorProps> = ({ images, sizeFactors, label }) => {
-    const gifRef = React.useRef<HTMLImageElement>(null);
+const HoverGifinator: React.FC<HoverGifinatorProps> = ({ images, label }) => {
     const [isPlaying, setIsPlaying] = React.useState(false);
+    const [imgIndex, setImgIndex] = React.useState(0);
 
     React.useEffect(() => {
-        if (isPlaying && gifRef.current) {
-            gifRef.current.src = images[0];
-            let currentIndex = 1;
+        if (isPlaying) {
+            setImgIndex(0);
 
             const intervalId = setInterval(() => {
-                if (gifRef.current) {
-                    gifRef.current.src = images[currentIndex];
-                }
-                currentIndex = (currentIndex + 1) % images.length;
-            }, 300);
+                setImgIndex((imgIndex) => (imgIndex + 1) % images.length)
+            }, 700);
 
             return () => clearInterval(intervalId);
         }
     }, [isPlaying, images]);
 
-    const sizeClasses = sizeFactors.map((sizeFactor, index) => `w-${sizeFactor * 64} h-${sizeFactor * 64}`).join(' ');
+    const image = images[imgIndex];
 
     return (
         <div className="relative">
             <div
-                className="absolute top-0 left-0 w-full h-full"
+                className="absolute top-0 left-0"
                 onMouseEnter={() => setIsPlaying(true)}
                 onMouseLeave={() => setIsPlaying(false)}
             >
@@ -39,8 +39,8 @@ const HoverGifinator: React.FC<HoverGifinatorProps> = ({ images, sizeFactors, la
             </div>
             {isPlaying && (
                 <img
-                    ref={gifRef}
-                    className={sizeClasses}
+                    src={image.src}
+                    style={{ width: `${image.sizeFactor * 100}%`, height: `${image.sizeFactor * 100}%` }}
                     alt="hover-gifinator"
                 />
             )}

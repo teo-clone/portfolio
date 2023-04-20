@@ -1,5 +1,6 @@
 import * as React from "react"
 import { PropsWithChildren } from "react"
+import UnderConstruction from "./UnderConstruction"
 
 export interface HeaderProps {
     title: string,
@@ -28,6 +29,8 @@ const Header = ({ title, borderColor, children }: PropsWithChildren<HeaderProps>
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             value={title}
         />
+
+        <UnderConstruction />
 
         <div className="flex gap-[10px]">
             {children}
