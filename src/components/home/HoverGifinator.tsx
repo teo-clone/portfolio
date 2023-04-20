@@ -29,7 +29,8 @@ const HoverGifinator: React.FC<HoverGifinatorProps> = ({ images, label }) => {
     const image = images[imgIndex];
 
     return (
-        <div className="relative">
+        // TODO: should this mb-4 remain ? how do we put some space under
+        <div className="relative mb-4">
             <div
                 className="absolute top-0 left-0"
                 onMouseEnter={() => setIsPlaying(true)}

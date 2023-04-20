@@ -22,8 +22,8 @@ const Intus = () => (
         <DetailsSection
             title={"WHAT WE DID"}
             contents={[
-                { type: 'paragraph', value: "Through continued customer interaction and research, I created iterative mocks of the application." },
-                { type: 'paragraph', value: "<reflect differences between versions>" },
+                { underConstruction: true, type: 'paragraph', value: "Through continued customer interaction and research, I created iterative mocks of the application." },
+                { underConstruction: true, type: 'paragraph', value: "<reflect differences between versions>" },
             ]}
             tags={[
                 "figma",
@@ -35,8 +35,8 @@ const Intus = () => (
         <DetailsSection
             title={"WHAT WE COULD DO"}
             contents={[
-                { type: 'paragraph', value: "Ended up developing a minimum viable product in Swift / Node.js. A lesson I learned from the experience was that it was too early to develop the application, as the product wasn't fully stable just yet. It would have been more worthwhile to continue iterating on the prototype, and using prototype interactions for the purpose of demos and market research." },
-                { type: 'paragraph', value: "Critical feature in the future would be a good patient / caregiver matching algorithm." },
+                { underConstruction: true, type: 'paragraph', value: "Ended up developing a minimum viable product in Swift / Node.js. A lesson I learned from the experience was that it was too early to develop the application, as the product wasn't fully stable just yet. It would have been more worthwhile to continue iterating on the prototype, and using prototype interactions for the purpose of demos and market research." },
+                { underConstruction: true, type: 'paragraph', value: "Critical feature in the future would be a good patient / caregiver matching algorithm." },
             ]}
             tags={[]}
         />

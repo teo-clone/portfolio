@@ -6,7 +6,8 @@ export type Content = Paragraph | Media
 
 export type Paragraph = {
     type: string;
-    value: string
+    value: string;
+    underConstruction?: boolean;
 }
 
 export type Media = {
@@ -14,6 +15,7 @@ export type Media = {
     src: string;
     mediaType: string;
     mediaAlt: string;
+    underConstruction?: boolean;
 }
 
 interface DetailsSectionProps {
@@ -29,22 +31,37 @@ const DetailsSection = ({ title, contents, tags }: DetailsSectionProps) => (
         </div>
         <div className={"w-[100%] flex flex-col gap-[15px]"}>
             {contents.map((item, index) => (
-                // TODO: conditionally render construction tape based on whether inProgress is set to true on content piece
+                // TODO: don't repeat this twice ... 
                 // <ConstructionTape>
-                <React.Fragment key={index}>
-                    {"value" in item && (
-                        <p>{item.value}</p>
-                    )}
-                    {"src" in item && (
-                        <div className="media w-full">
+                item.underConstruction
+                    ? <ConstructionTape>
+                        <React.Fragment key={index}>
+                            {"value" in item && (
+                                <p>{item.value}</p>
+                            )}
+                            {"src" in item && (
+                                <div className="media">
+                                    {item.mediaType === 'image'
+                                        ? <img src={item.src} alt={item.mediaAlt} />
+                                        : <video src={item.src} controls autoPlay muted />
+                                    }
+                                </div>
+                            )}
+                        </React.Fragment>
+                    </ConstructionTape>
+                    : <React.Fragment key={index}>
+                        {"value" in item && (
+                            <p>{item.value}</p>
+                        )}
+                        {"src" in item && (
+                            <div className="media">
                             {item.mediaType === 'image'
                                 ? <img src={item.src} alt={item.mediaAlt} />
                                 : <video src={item.src} controls autoPlay muted />
                             }
                         </div>
                     )}
-                </React.Fragment>
-                // </ConstructionTape>
+                    </React.Fragment>
             ))}
             <div className="flex wrap gap-[15px]">
                 {tags.map((tag, index) => (

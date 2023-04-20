@@ -32,21 +32,6 @@ const A360 = () => (
                 "cypress"
             ]}
         />
-        <ConstructionTape>
-            {/* Content to be displayed above construction tape */}
-            <h1>This is a construction zoneThis is a construction zoneThis is a construction zoneThis is a construction zoneThis is a construction zone</h1>
-        </ConstructionTape>
-        <div>
-            {/* <ConstructionTape> */}
-            <p>Line 1</p>
-            <p>Line 2</p>
-            <p>Line 3</p>
-            {/* Add more lines of text as needed */}
-            {/* </ConstructionTape> */}
-            <ConstructionTape>
-                <p>Sorry for the inconvenience</p>
-            </ConstructionTape>
-        </div>
         <DetailsSection
             title={"INFRASTRUCTURE"}
             contents={[
@@ -56,9 +41,9 @@ const A360 = () => (
                 { type: 'media', src: properties, mediaAlt: "Images of components described above", mediaType: "image" },
                 { type: 'paragraph', value: "The BaseProperty component also includes validity logic that renders an error decorator to warn the user of any possible issues with the input value." },
                 { type: 'paragraph', value: "Leveraging this functionality, I created specialized components such as BusinessNameProperty and IdentifyingNameProperty, both of which are built on top of TextProperty. These components centralize the logic for validating business names and identifying names." },
-                { type: 'paragraph', value: "[gifs of different types of errors related to business names and identifying names]" },
-                { type: 'paragraph', value: "[further advancements]" },
-                { type: 'paragraph', value: "[gif of an <EntityDropdown /> and a <FolderDropdown />, editing them and how they affect each other (unsetting and filtering), and deprecation warnings on both." },
+                { underConstruction: true, type: 'paragraph', value: "[gifs of different types of errors related to business names and identifying names]" },
+                { underConstruction: true, type: 'paragraph', value: "[further advancements]" },
+                { underConstruction: true, type: 'paragraph', value: "[gif of an <EntityDropdown /> and a <FolderDropdown />, editing them and how they affect each other (unsetting and filtering), and deprecation warnings on both." },
             ]}
             tags={[
                 "typescript",
@@ -69,8 +54,8 @@ const A360 = () => (
         <DetailsSection
             title={"UI DESIGN"}
             contents={[
-                { type: 'paragraph', value: "Computing Notification Fields in a Watcher" },
-                { type: 'paragraph', value: "[photos of mock iterations]" },
+                { underConstruction: true, type: 'paragraph', value: "Computing Notification Fields in a Watcher" },
+                { underConstruction: true, type: 'paragraph', value: "[photos of mock iterations]" },
             ]}
             tags={[
                 "figma",
