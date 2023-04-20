@@ -2,12 +2,13 @@ import React, { PropsWithChildren, ReactNode, useEffect, useRef, useState } from
 
 const ConstructionTape: React.FC<PropsWithChildren> = ({ children }) => {
     const childRef = useRef<HTMLDivElement>(null);
+    const [windowWidth, setWindowWidth] = useState(0);
     const [numRectangles, setNumRectangles] = useState(0);
-
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     useEffect(() => {
         const handleResize = () => setWindowWidth(window.innerWidth);
+
+        handleResize(); // set initial windowWidth;
 
         window.addEventListener("resize", handleResize);
 
