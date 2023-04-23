@@ -19,6 +19,8 @@ import ToolboxCodeSection from "./toolbox/ToolboxCodeSection"
 import ToolboxDesignSection from "./toolbox/ToolboxDesignSection"
 import ToolboxLanguageSection from "./toolbox/ToolboxLanguageSection"
 import HoverGifinator from "./HoverGifinator"
+import UnderConstruction from "../UnderConstruction"
+import ConstructionTape from "../ConstructionTape"
 
 const About = () => (
     <div id="about" className="border-green">
@@ -45,9 +47,11 @@ const About = () => (
                     </div>
                     <div>
                         When I am not working I am&nbsp;
+                        <ConstructionTape>
                         <PopupLink label={"X"} url={""} />,&nbsp;
                         <PopupLink label={"Y"} url={""} />,&nbsp;
                         <PopupLink label={"Z"} url={""} />.
+                        </ConstructionTape>
                         <HoverGifinator
                             images={[
                                 { src: rooftop_dining, sizeFactor: 0.8 },
