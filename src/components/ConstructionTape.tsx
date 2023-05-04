@@ -23,7 +23,7 @@ const ConstructionTape: React.FC<PropsWithChildren> = ({ children }) => {
     }, [children, windowWidth]);
 
     return (
-        <div className="relative">
+        <div className="relative w-fit">
             {Array(numRectangles).fill(0).map((_, index) =>
                 <div
                     key={index}
