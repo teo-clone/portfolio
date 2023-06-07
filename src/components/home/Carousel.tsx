@@ -5,7 +5,7 @@ import Slider from "react-slick";
 
 export interface ImageProps {
     id: string,
-    url: string,
+    src: string,
     alt: string
 }
 
@@ -31,7 +31,7 @@ const Carousel = (props: CarouselProps) => (
             <div className="wrapper" key={image.id}>
                 <img
                     className="sliderImg"
-                    src={image.url}
+                    src={image.src}
                     alt={image.alt}
                 />
             </div>

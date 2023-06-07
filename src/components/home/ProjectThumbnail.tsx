@@ -2,17 +2,22 @@ import * as React from "react"
 import { Link } from "gatsby"
 
 import Carousel, { ImageProps } from "./Carousel"
+import { useMediaQuery } from "react-responsive";
 
 export interface ProjectThumbnailProps {
     fullInfoUrl: string,
     title: string,
     timeline: string,
     description: string,
-    images: ImageProps[],
+    carouselImages: ImageProps[],
+    womboComboImage: ImageProps
 }
 
-const ProjectThumbnail = (props: ProjectThumbnailProps) => (
-    <>
+const ProjectThumbnail = (props: ProjectThumbnailProps) => {
+
+    const isBigScreen = useMediaQuery({ query: '(min-width: 768px)' })
+
+    return <>
         <div id="left" className="md:border-r border-b">
             <div className="flex flex-col">
                 <div className="flex justify-between px-[20px] py-[25px] border-b">
@@ -32,12 +37,18 @@ const ProjectThumbnail = (props: ProjectThumbnailProps) => (
 
         <div id="right" className="border-b">
             <div className="px-[20px] py-[25px]">
-                <Carousel
-                    images={props.images}
-                />
+                {isBigScreen &&
+                    <img
+                        className="wombo"
+                        src={props.womboComboImage.src}
+                        alt={props.womboComboImage.alt}
+                    />}
+                {!isBigScreen && <Carousel
+                    images={props.carouselImages}
+                />}
             </div>
         </div>
     </>
-)
+}
 
 export default ProjectThumbnail
