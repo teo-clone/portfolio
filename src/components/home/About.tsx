@@ -1,5 +1,5 @@
 import * as React from "react"
-import me from "../../images/me.jpg"
+import me from "../../images/me.jpeg"
 import older_teo from "../../images/older_teo.jpg"
 import giovanni from "../../images/amigos/giovanni.jpg"
 import cec_cam from "../../images/amigos/cec_cam.jpg"
