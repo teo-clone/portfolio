@@ -7,7 +7,7 @@ import base from "../images/a360/property/base.png"
 import description from "../images/a360/property/description.png"
 import text from "../images/a360/property/text.gif"
 import business from "../images/a360/property/business.png"
-import identifying from "../images/a360/property/identifying.png"
+import identifying from "../images/a360/property/identifying.gif"
 import dropdown from "../images/a360/property/dropdown.gif"
 import checkbox from "../images/a360/property/checkbox.png"
 import ConstructionTape from "../components/ConstructionTape"
@@ -50,45 +50,52 @@ const A360 = () => (
             <p>{"The application makes extensive use of input forms. I took it upon myself to create input component infrastructure in a generic, object oriented manner."}</p>
             <p>{"My base unit ended up being the BaseProperty, a component that renders a label and a value."}</p>
 
-            <div className="flex justify-center">
+            <div className="flex justify-center my-[50px]">
                 <PropertyExample
                     title="<BaseProperty />"
                     img={base}
+                    widthPx="157" // 628
                     subtitle="In the example above, Favorite Fruit is the label and an image of a fig is the value"
                 />
             </div>
 
             <p>{"I built several other React components on top of BaseProperty to abstract and share logic such as styling, validity, optional/required, readonly/edit, dependent inputs, loading dropdown items based on a query."}</p>
 
-            <div className="grid gap-[100px] grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 justify-center">
+            <div className="grid gap-[100px] grid-cols-1 md:grid-cols-2 my-[50px] gap-4 justify-center">
                 <PropertyExample
                     title="<TextProperty />"
                     img={text}
+                    widthPx="450" // 1200
                     subtitle="Renders the value as a text input when in edit mode and regular text when in readonly mode"
                 />
                 <PropertyExample
                     title="<TextAreaProperty />"
                     img={description}
+                    widthPx="557" // 2228
                     subtitle="Renders the value as a resizable text area input when in edit mode and regular text when in readonly mode"
                 />
                 <PropertyExample
                     title="<BusinessNameProperty />"
                     img={business}
+                    widthPx="408" // 1632 
                     subtitle="The user is required to fill this in, as denoted by the star"
                 />
                 <PropertyExample
                     title="<IdentifyingNameProperty />"
                     img={identifying}
+                    widthPx="449" // 1796
                     subtitle="This property has custom validation logic relevant to an \'Identifying Name\' built into it "
                 />
                 <PropertyExample
                     title="<DropdownProperty />"
                     img={dropdown}
+                    widthPx="292" // 1168
                     subtitle="Renders the value as a dropdown of passed in options when in edit mode"
                 />
                 <PropertyExample
                     title="<CheckboxProperty />"
                     img={checkbox}
+                    widthPx="110" // 440
                     subtitle="Renders the value as a checkbox which can be toggled when in edit mode"
                 />
             </div>
