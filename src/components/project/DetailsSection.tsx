@@ -25,7 +25,7 @@ interface DetailsSectionProps {
 const DetailsSection = ({ title, tags, children }: PropsWithChildren<DetailsSectionProps>) => {
 
     return (
-        <div className={"flex flex-col gap-[15px] md:flex-row grow"}>
+        <div className={"flex flex-col md:flex-row gap-[15px] grow"}>
             <div className={"font-bold w-[200px]"}>
                 <div>{title}</div>
             </div>

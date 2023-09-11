@@ -20,7 +20,7 @@ const A360 = () => (
         toolkit={"Web Application Development, Feature Design"}
         team={"Team of 24 people, 4 of which were frontend developers"}
         briefParagraphs={[
-            "Active>360 is a real-time event processing platform. [It allows business users to create a profile of their customer interactions.] (word this a bit better).",
+            "Active>360 is a real-time event processing platform. It allows businesses to create a profile of their customer interactions.",
             "The user creates events they want to observe (e.g. SMS Sent), calculations on those events (e.g. Weekly International SMS Messages), and notifications they want to send to their customers (e.g. International SMS Offer)."
         ]}
     >
