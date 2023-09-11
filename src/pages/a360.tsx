@@ -3,7 +3,15 @@ import DetailsSection from "../components/project/DetailsSection"
 import ProjectTemplate from "../components/project/ProjectTemplate"
 import event_create from "../images/a360/event_create.mp4"
 import properties from "../images/a360/properties.png"
+import base from "../images/a360/property/base.png"
+import description from "../images/a360/property/description.png"
+import text from "../images/a360/property/text.gif"
+import business from "../images/a360/property/business.png"
+import identifying from "../images/a360/property/identifying.png"
+import dropdown from "../images/a360/property/dropdown.gif"
+import checkbox from "../images/a360/property/checkbox.png"
 import ConstructionTape from "../components/ConstructionTape"
+import PropertyExample from "../components/a360/PropertyExample"
 
 const A360 = () => (
     <ProjectTemplate
@@ -18,49 +26,85 @@ const A360 = () => (
     >
         <DetailsSection
             title={"DEVELOPMENT"}
-            contents={[
-                { type: 'paragraph', value: "One of the first pages I built on Active>360 is the Event creation page. This page allows the user to specify an Event, which refers to an input that will be added to the system. In the example below, this input is a Weather Forecast." },
-                { type: 'paragraph', value: "The process of creating an Event is divided into sections that the user can focus on one at a time." },
-                { type: 'paragraph', value: "First, the user chooses an Entity (e.g. Vermont Resident or Colorado Resident) to associate the Event with. After that, they should provide a business name, technical name (which is created automatically), and a description." },
-                { type: 'paragraph', value: "Finally, the user can add Fields to the Event, specifying what information they want the Event to contain (e.g. Forecast Date, High Temperature, Low Temperature). These Fields can be put into Folders, creating a hierarchy." },
-                { type: 'media', src: event_create, mediaAlt: "Video showing event creation", mediaType: "video" },
-                { type: 'paragraph', value: "I ended up creating several other object pages, using a lot of the same infrastructure. To make sure everything works well, I used cypress to build tests for each page." },
-            ]}
             tags={[
                 "typescript",
                 "react.js",
                 "cypress"
             ]}
-        />
+        >
+            <p>{"One of the pages I built on Active>360 is the Event creation page. An Event refers to an input that the business wants to observe to potentially make calculations on. "}</p>
+            <p>{"In the example below, we can imagine that a Ski Resort may want to send their customers reminders to buy a ski pass when certain weather conditions are met. A business user would then create an Event that comes into the system once a day, a Weather Forecast."}</p>
+            <video src={event_create} controls autoPlay muted />
+            <p>{"The process of creating an Event is divided into sections that the user can focus on individually. An event is most importantly composed of a name, and the fields (the info) that is attached to each incoming instance of the event. In the Weather Forecast event example Forecast Date, Temperature and Snowfall Info seem like appropriate fields we want to know about."}</p>
+            <p>{"I ended up creating several other object pages, using a lot of the same infrastructure. To make sure everything works well, I used cypress to build tests for each page."}</p>
+
+        </DetailsSection>
         <DetailsSection
             title={"INFRASTRUCTURE"}
-            contents={[
-                { type: 'paragraph', value: "The application screens make extensive use of input forms such as text inputs, dropdowns, and others. To address this, I created input component infrastructure that abstracts common functionality." },
-                { type: 'paragraph', value: "To begin, I created a BaseProperty component that can render a label and either an input component in edit mode or display the property value otherwise." },
-                { type: 'paragraph', value: "Building on this, I developed more specific components like TextProperty, TextAreaProperty, DropdownProperty, and CheckboxProperty, which determine the type of input form to render in edit mode." },
-                { type: 'media', src: properties, mediaAlt: "Images of components described above", mediaType: "image" },
-                { type: 'paragraph', value: "The BaseProperty component also includes validity logic that renders an error decorator to warn the user of any possible issues with the input value." },
-                { type: 'paragraph', value: "Leveraging this functionality, I created specialized components such as BusinessNameProperty and IdentifyingNameProperty, both of which are built on top of TextProperty. These components centralize the logic for validating business names and identifying names." },
-                { underConstruction: true, type: 'paragraph', value: "[gifs of different types of errors related to business names and identifying names]" },
-                { underConstruction: true, type: 'paragraph', value: "[further advancements]" },
-                { underConstruction: true, type: 'paragraph', value: "[gif of an <EntityDropdown /> and a <FolderDropdown />, editing them and how they affect each other (unsetting and filtering), and deprecation warnings on both." },
-            ]}
             tags={[
                 "typescript",
                 "react.js",
                 "oop" // TODO: make this object oriented programming
             ]}
-        />
+        >
+            <p>{"The application makes extensive use of input forms. I took it upon myself to create input component infrastructure in a generic, object oriented manner."}</p>
+            <p>{"My base unit ended up being the BaseProperty, a component that renders a label and a value."}</p>
+
+            <div className="flex justify-center">
+                <PropertyExample
+                    title="<BaseProperty />"
+                    img={base}
+                    subtitle="In the example above, Favorite Fruit is the label and an image of a fig is the value"
+                />
+            </div>
+
+            <p>{"I built several other React components on top of BaseProperty to abstract and share logic such as styling, validity, optional/required, readonly/edit, dependent inputs, loading dropdown items based on a query."}</p>
+
+            <div className="grid gap-[100px] grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 justify-center">
+                <PropertyExample
+                    title="<TextProperty />"
+                    img={text}
+                    subtitle="Renders the value as a text input when in edit mode and regular text when in readonly mode"
+                />
+                <PropertyExample
+                    title="<TextAreaProperty />"
+                    img={description}
+                    subtitle="Renders the value as a resizable text area input when in edit mode and regular text when in readonly mode"
+                />
+                <PropertyExample
+                    title="<BusinessNameProperty />"
+                    img={business}
+                    subtitle="The user is required to fill this in, as denoted by the star"
+                />
+                <PropertyExample
+                    title="<IdentifyingNameProperty />"
+                    img={identifying}
+                    subtitle="This property has custom validation logic relevant to an \'Identifying Name\' built into it "
+                />
+                <PropertyExample
+                    title="<DropdownProperty />"
+                    img={dropdown}
+                    subtitle="Renders the value as a dropdown of passed in options when in edit mode"
+                />
+                <PropertyExample
+                    title="<CheckboxProperty />"
+                    img={checkbox}
+                    subtitle="Renders the value as a checkbox which can be toggled when in edit mode"
+                />
+            </div>
+
+        </DetailsSection>
+
         <DetailsSection
             title={"UI DESIGN"}
-            contents={[
-                { underConstruction: true, type: 'paragraph', value: "Computing Notification Fields in a Watcher" },
-                { underConstruction: true, type: 'paragraph', value: "[photos of mock iterations]" },
-            ]}
-            tags={[
-                "figma",
-            ]}
-        />
+            tags={["figma"]}
+        >
+
+            <p>{"Computing Notification Fields in a Watcher"}</p>
+            <p>{"[photos of mock iterations]"}</p>
+
+        </DetailsSection>
+
     </ProjectTemplate>
 )
 

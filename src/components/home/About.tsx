@@ -16,7 +16,6 @@ const About = () => (
         <div className="grid md:grid-cols-2 grid-cols-1">
             <div id="left" className="p-[10px] w-full border-t md:border-r">
                 <img src={me} />
-                {/* <img src={older_teo} /> */}
             </div>
 
             <div id="right" className="border-t py-[25px] px-[25px]">

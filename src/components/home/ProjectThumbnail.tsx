@@ -18,9 +18,9 @@ const ProjectThumbnail = (props: ProjectThumbnailProps) => {
     const isBigScreen = useMediaQuery({ query: '(min-width: 768px)' })
 
     return <>
-        <div id="left" className="md:border-r border-b">
+        <div id="left" className="border-3 md:border-r border-b">
             <div className="flex flex-col">
-                <div className="flex justify-between px-[20px] py-[25px] border-b">
+                <div className="flex justify-between px-[20px] py-[25px] border-b border-3">
                     <div className="font-bold">
                         {props.title}
                     </div>
