@@ -10,6 +10,9 @@ import business from "../images/a360/property/business.png"
 import identifying from "../images/a360/property/identifying.gif"
 import dropdown from "../images/a360/property/dropdown.gif"
 import checkbox from "../images/a360/property/checkbox.png"
+import watcher from "../images/a360/watcher.png"
+import notification from "../images/a360/notification.png"
+import rulesets from "../images/a360/rulesets.gif"
 import ConstructionTape from "../components/ConstructionTape"
 import PropertyExample from "../components/a360/PropertyExample"
 
@@ -61,7 +64,7 @@ const A360 = () => (
 
             <p>{"I built several other React components on top of BaseProperty to abstract and share logic such as styling, validity, optional/required, readonly/edit, dependent inputs, loading dropdown items based on a query."}</p>
 
-            <div className="grid gap-[100px] grid-cols-1 md:grid-cols-2 my-[50px] gap-4 justify-center">
+            <div className="grid gap-[100px] grid-cols-1 md:grid-cols-2 my-[50px] items-center justify-center py-[30px]">
                 <PropertyExample
                     title="<TextProperty />"
                     img={text}
@@ -106,9 +109,25 @@ const A360 = () => (
             title={"UI DESIGN"}
             tags={["figma"]}
         >
+            <p>{"Let us revisit the ski resort example from above. In addition to the Weather Forecast Event, the resort would create a Notification which they want to send to their customers when it is a good time to ski. "}</p>
 
-            <p>{"Computing Notification Fields in a Watcher"}</p>
-            <p>{"[photos of mock iterations]"}</p>
+            <div className="flex justify-center">
+                <img style={{ minWidth: `${500}px`, maxWidth: `${900}px` }} src={notification} alt={"alt"} />
+            </div>
+
+            <p>{"The resort also creates a Watcher to write logic that “watches” the incoming events and sends the desired notification when certain conditions are met. For example, if there is a particularly snowy day coming up, or if the ski season is ending."}</p>
+
+            <div className="flex justify-center">
+                <img style={{ minWidth: `${500}px`, maxWidth: `${900}px` }} src={watcher} alt={"alt"} />
+            </div>
+
+            <p>{"The task at hand was to create the UI for populating Notification fields when a Watcher conditions are met, and the Notification is sent."}</p>
+            <p>{"In the example above, we need to decide how to populate Where, When, and Inches of Snow, based on how the Watcher was triggered (whether it was because of Weather Forecast or because of some other access of 360)."}</p>
+            <p>{"The initial proposal that my manager asked me to sketch up was a snippet like the following which we could add somewhere on the page, after the user has selected which Notification they wish to send."}</p>
+
+            <div className="flex justify-center">
+                <img style={{ minWidth: `${500}px`, maxWidth: `${900}px` }} src={rulesets} alt={"alt"} />
+            </div>
 
         </DetailsSection>
 

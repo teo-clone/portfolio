@@ -4,7 +4,7 @@ import ProjectTemplate from "../components/project/ProjectTemplate"
 
 const Intus = () => (
     <ProjectTemplate
-        title={"INTUS"}
+        title={"INTUS CARE"}
         role={"Co-founder, Software Developer and UI Designer"}
         toolkit={"Product Strategy, Mobile Development, Product Design"}
         team={"Evan Jackson, Robbie Felton, Samuel Prado"}

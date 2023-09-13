@@ -28,7 +28,7 @@ const ProjectTemplate = (props: PropsWithChildren<ProjectTemplateProps>) => (
         </Header>
 
         <div className="border-blue grid md:grid-cols-2 grid-cols-1">
-            <div id="left" className="md:border-r border-b px-[20px] py-[25px]">
+            <div id="left" className="md:border-r border-b px-[30px] py-[30px]">
                 <div className={"flex flex-col gap-[15px]"}>
                     <KeyInfoSection
                         title={"MY ROLE"}
@@ -44,7 +44,7 @@ const ProjectTemplate = (props: PropsWithChildren<ProjectTemplateProps>) => (
                     />
                 </div>
             </div>
-            <div id="right" className="border-b px-[20px] py-[25px]">
+            <div id="right" className="border-b px-[30px] py-[30px]">
                 <KeyInfoSection
                         title={"BRIEF"}
                     texts={props.briefParagraphs}
@@ -52,7 +52,7 @@ const ProjectTemplate = (props: PropsWithChildren<ProjectTemplateProps>) => (
             </div>
         </div>
 
-        <div className="flex flex-col gap-[50px] px-[20px] py-[25px]">
+        <div className="border-blue grid md:grid-cols-[250px_auto] grid-cols-1">
             {props.children}
         </div>
     </div>

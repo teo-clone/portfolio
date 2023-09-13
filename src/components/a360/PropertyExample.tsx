@@ -16,7 +16,7 @@ const PropertyExample = ({ title, img, subtitle, widthPx }: PropertyExampleProps
             <div>
                 <img style={{ minWidth: `${widthPx}px`, maxWidth: `${widthPx}px` }} src={img} alt={"alt"} />
             </div>
-            <div className={"text-sm text-slate-400"}>
+            <div className={"text-sm font-extralight text-slate-400"}>
                 {subtitle}
             </div>
         </div>

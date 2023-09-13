@@ -18,7 +18,7 @@ const About = () => (
                 <img src={me} />
             </div>
 
-            <div id="right" className="border-t py-[25px] px-[25px]">
+            <div id="right" className="border-t py-[30px] px-[30px]">
                 <div className="flex flex-col gap-[10px]">
                     <div>
                         Γεια!
@@ -55,7 +55,7 @@ const About = () => (
         </div>
 
         <div className="flex wrap grow flex-col">
-            <div className="border-t py-[10px] px-[25px] font-bold">
+            <div className="border-t py-[30px] px-[30px] font-bold">
                 TOOLBOX
             </div>
 

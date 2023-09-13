@@ -8,7 +8,7 @@ const HomePage = () => (
   <div>
     <HomeHeader />
 
-    <div className="px-[20px] py-[35px]">
+    <div className="px-[30px] py-[30px]">
       <div>Software developer and designer currently in Brooklyn, NY</div>
     </div>
 
