@@ -12,6 +12,11 @@ import checkbox from "../images/a360/property/checkbox.png"
 import watcher from "../images/a360/watcher.png"
 import notification from "../images/a360/notification.png"
 import rulesets from "../images/a360/rulesets.gif"
+import rulesets_improved from "../images/a360/rulesets_improved.gif"
+import rulesets_improved_filled from "../images/a360/rulesets_improved_filled.png"
+import improved_v2 from "../images/a360/improved_v2.png"
+import improved_v3 from "../images/a360/improved_v3.png"
+import improved_v4 from "../images/a360/improved_v4.png"
 import ConstructionTape from "../components/ConstructionTape"
 import PropertyExample from "../components/a360/PropertyExample"
 
@@ -122,11 +127,32 @@ const A360 = () => (
 
             <p>{"The task at hand was to create the UI for populating Notification fields when a Watcher conditions are met, and the Notification is sent."}</p>
             <p>{"In the example above, we need to decide how to populate Where, When, and Inches of Snow, based on how the Watcher was triggered (whether it was because of Weather Forecast or because of some other access of 360)."}</p>
-            <p>{"The initial proposal that my manager asked me to sketch up was a snippet like the following which we could add somewhere on the page, after the user has selected which Notification they wish to send."}</p>
 
             <div className="flex justify-center">
                 <img style={{ minWidth: `${300}px`, maxWidth: `${900}px` }} src={rulesets} alt={"alt"} />
             </div>
+
+            <p>{"The dropdown options that appear above (Default / Weather Forecast) are fully derived from the Watcher’s Send Conditions above. Because there is a 1-1 link between a send condition, and a ruleset definition for that condition, I decided to design a UI which more closely couples the two."}</p>
+
+            <div className="flex justify-center">
+                <img style={{ minWidth: `${300}px`, maxWidth: `${1100}px` }} src={rulesets_improved} alt={"alt"} />
+            </div>
+
+            <p>{"And once the user fills in the send conditions and the outputs for each trigger:"}</p>
+
+            <div className="flex justify-center">
+                <img style={{ minWidth: `${300}px`, maxWidth: `${1200}px` }} src={rulesets_improved_filled} alt={"alt"} />
+            </div>
+
+            <p>{"The re-design approach I took connects the send conditions and the output definitions into one section. I made several variations of this design to see what fits our application’s aesthetic and what people seemed to like the most."}</p>
+
+
+            <div className="flex flex-wrap justify-center">
+                <img src={improved_v2} alt={"alt"} />
+                <img src={improved_v3} alt={"alt"} />
+                <img src={improved_v4} alt={"alt"} />
+            </div>
+
 
         </DetailsSection>
 

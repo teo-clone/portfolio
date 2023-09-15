@@ -6,7 +6,7 @@ export interface ToolboxSectionProps {
 }
 
 const ToolboxSection = (props: ToolboxSectionProps) => (
-    <div className="flex flex-col border-b">
+    <div className="flex grow flex-col border-b">
         <div className="py-[30px] px-[30px] border-r border-b font-bold">
             {props.title}
         </div>
