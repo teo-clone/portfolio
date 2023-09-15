@@ -7,7 +7,6 @@ type HoverGifinatorProps = {
 
 const HoverGifinator: React.FC<HoverGifinatorProps> = ({ gifSrc, label }) => {
     const [isPlaying, setIsPlaying] = React.useState(false);
-    const [imgIndex, setImgIndex] = React.useState(0);
 
     return (
         <div>

@@ -17,7 +17,6 @@ import rulesets_improved_filled from "../images/a360/rulesets_improved_filled.pn
 import improved_v2 from "../images/a360/improved_v2.png"
 import improved_v3 from "../images/a360/improved_v3.png"
 import improved_v4 from "../images/a360/improved_v4.png"
-import ConstructionTape from "../components/ConstructionTape"
 import PropertyExample from "../components/a360/PropertyExample"
 
 const A360 = () => (

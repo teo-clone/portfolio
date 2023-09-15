@@ -3,7 +3,6 @@ import me from "../../images/me.jpeg"
 import biking from "../../images/biking.gif"
 import amigos from "../../images/amigos.gif"
 
-import PopupLink from "./PopupLink"
 import ToolboxCodeSection from "./toolbox/ToolboxCodeSection"
 import ToolboxDesignSection from "./toolbox/ToolboxDesignSection"
 import ToolboxLanguageSection from "./toolbox/ToolboxLanguageSection"
@@ -42,9 +41,9 @@ const About = () => (
                                 gifSrc={biking}
                                 label={"biking, "}
                             />
-                            <PopupLink label={"X"} url={""} />,&nbsp;
-                            <PopupLink label={"Y"} url={""} />,&nbsp;
-                            <PopupLink label={"Z"} url={""} />.
+                            <HoverGifinator gifSrc={""} label={"X, "} />
+                            <HoverGifinator gifSrc={""} label={"Y, "} />
+                            <HoverGifinator gifSrc={""} label={"Z"} />
                         </div>
                     </div>
                 </div>

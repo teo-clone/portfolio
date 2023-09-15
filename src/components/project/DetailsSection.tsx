@@ -1,6 +1,5 @@
 import * as React from "react"
 import Tag from "./Tag";
-import ConstructionTape from "../ConstructionTape";
 import { PropsWithChildren } from "react";
 
 export type Paragraph = {
