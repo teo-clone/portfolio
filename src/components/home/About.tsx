@@ -8,7 +8,6 @@ import ToolboxCodeSection from "./toolbox/ToolboxCodeSection"
 import ToolboxDesignSection from "./toolbox/ToolboxDesignSection"
 import ToolboxLanguageSection from "./toolbox/ToolboxLanguageSection"
 import HoverGifinator from "./HoverGifinator"
-import ConstructionTape from "../ConstructionTape"
 
 const About = () => (
     <div id="about" className="border-green">
@@ -43,11 +42,9 @@ const About = () => (
                                 gifSrc={biking}
                                 label={"biking, "}
                             />
-                            <ConstructionTape>
-                                <PopupLink label={"X"} url={""} />,&nbsp;
-                                <PopupLink label={"Y"} url={""} />,&nbsp;
-                                <PopupLink label={"Z"} url={""} />.
-                            </ConstructionTape>
+                            <PopupLink label={"X"} url={""} />,&nbsp;
+                            <PopupLink label={"Y"} url={""} />,&nbsp;
+                            <PopupLink label={"Z"} url={""} />.
                         </div>
                     </div>
                 </div>
