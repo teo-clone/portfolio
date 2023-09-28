@@ -71,36 +71,42 @@ const A360 = () => (
                 <PropertyExample
                     title="<TextProperty />"
                     img={text}
+                    minWidthPx="200"
                     widthPx="450" // 1200
                     subtitle="Renders the value as a text input when in edit mode and regular text when in readonly mode"
                 />
                 <PropertyExample
                     title="<TextAreaProperty />"
                     img={description}
+                    minWidthPx="371"
                     widthPx="557" // 2228
                     subtitle="Renders the value as a resizable text area input when in edit mode and regular text when in readonly mode"
                 />
                 <PropertyExample
                     title="<BusinessNameProperty />"
                     img={business}
+                    minWidthPx="272"
                     widthPx="408" // 1632 
                     subtitle="The user is required to fill this in, as denoted by the star"
                 />
                 <PropertyExample
                     title="<IdentifyingNameProperty />"
                     img={identifying}
+                    minWidthPx="299"
                     widthPx="449" // 1796
                     subtitle="This property has custom validation logic relevant to an \'Identifying Name\' built into it "
                 />
                 <PropertyExample
                     title="<DropdownProperty />"
                     img={dropdown}
+                    minWidthPx="194"
                     widthPx="292" // 1168
                     subtitle="Renders the value as a dropdown of passed in options when in edit mode"
                 />
                 <PropertyExample
                     title="<CheckboxProperty />"
                     img={checkbox}
+                    minWidthPx="73"
                     widthPx="110" // 440
                     subtitle="Renders the value as a checkbox which can be toggled when in edit mode"
                 />
@@ -115,32 +121,32 @@ const A360 = () => (
             <p>{"Let us revisit the ski resort example from above. In addition to the Weather Forecast Event, the resort would create a Notification which they want to send to their customers when it is a good time to ski. "}</p>
 
             <div className="flex justify-center">
-                <img style={{ minWidth: `${300}px`, maxWidth: `${900}px` }} src={notification} alt={"alt"} />
+                <img style={{ minWidth: `${150}px`, maxWidth: `${900}px` }} src={notification} alt={"alt"} />
             </div>
 
             <p>{"The resort also creates a Watcher to write logic that “watches” the incoming events and sends the desired notification when certain conditions are met. For example, if there is a particularly snowy day coming up, or if the ski season is ending."}</p>
 
             <div className="flex justify-center">
-                <img style={{ minWidth: `${300}px`, maxWidth: `${900}px` }} src={watcher} alt={"alt"} />
+                <img style={{ minWidth: `${150}px`, maxWidth: `${900}px` }} src={watcher} alt={"alt"} />
             </div>
 
             <p>{"The task at hand was to create the UI for populating Notification fields when a Watcher conditions are met, and the Notification is sent."}</p>
             <p>{"In the example above, we need to decide how to populate Where, When, and Inches of Snow, based on how the Watcher was triggered (whether it was because of Weather Forecast or because of some other access of 360)."}</p>
 
             <div className="flex justify-center">
-                <img style={{ minWidth: `${300}px`, maxWidth: `${900}px` }} src={rulesets} alt={"alt"} />
+                <img style={{ minWidth: `${150}px`, maxWidth: `${900}px` }} src={rulesets} alt={"alt"} />
             </div>
 
             <p>{"The dropdown options that appear above (Default / Weather Forecast) are fully derived from the Watcher’s Send Conditions above. Because there is a 1-1 link between a send condition, and a ruleset definition for that condition, I decided to design a UI which more closely couples the two."}</p>
 
             <div className="flex justify-center">
-                <img style={{ minWidth: `${300}px`, maxWidth: `${1100}px` }} src={rulesets_improved} alt={"alt"} />
+                <img style={{ minWidth: `${150}px`, maxWidth: `${1100}px` }} src={rulesets_improved} alt={"alt"} />
             </div>
 
             <p>{"And once the user fills in the send conditions and the outputs for each trigger:"}</p>
 
             <div className="flex justify-center">
-                <img style={{ minWidth: `${300}px`, maxWidth: `${1200}px` }} src={rulesets_improved_filled} alt={"alt"} />
+                <img style={{ minWidth: `${150}px`, maxWidth: `${1200}px` }} src={rulesets_improved_filled} alt={"alt"} />
             </div>
 
             <p>{"The re-design approach I took connects the send conditions and the output definitions into one section. I made several variations of this design to see what fits our application’s aesthetic and what people seemed to like the most."}</p>
