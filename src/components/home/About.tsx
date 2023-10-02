@@ -9,14 +9,14 @@ import ToolboxLanguageSection from "./toolbox/ToolboxLanguageSection"
 import HoverGifinator from "./HoverGifinator"
 
 const About = () => (
-    <div id="about" className="border-green">
+    <div id="about" className="border-green border-t-2">
 
         <div className="grid md:grid-cols-2 grid-cols-1">
-            <div id="left" className="p-[10px] w-full border-t md:border-r">
+            <div id="left" className="p-[10px] w-full md:border-r">
                 <img src={me} />
             </div>
 
-            <div id="right" className="border-t py-[30px] px-[30px]">
+            <div id="right" className="md:border-none border-t py-[30px] px-[30px]">
                 <div className="flex flex-col gap-[10px]">
                     <div>
                         Γεια!

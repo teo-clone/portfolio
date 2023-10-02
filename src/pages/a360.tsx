@@ -40,7 +40,9 @@ const A360 = () => (
         >
             <p>{"One of the pages I built on Active>360 is the Event creation page. An Event refers to an input that the business wants to observe to potentially make calculations on. "}</p>
             <p>{"In the example below, we can imagine that a Ski Resort may want to send their customers reminders to buy a ski pass when certain weather conditions are met. A business user would then create an Event that comes into the system once a day, a Weather Forecast."}</p>
-            <video src={event_create} controls autoPlay muted />
+            <div className="bg-slate-50 p-5 rounded-md">
+                <video src={event_create} controls autoPlay loop muted className="rounded-md" />
+            </div>
             <p>{"The process of creating an Event is divided into sections that the user can focus on individually. An event is most importantly composed of a name, and the fields (the info) that is attached to each incoming instance of the event. In the Weather Forecast event example Forecast Date, Temperature and Snowfall Info seem like appropriate fields we want to know about."}</p>
             <p>{"I ended up creating several other object pages, using a lot of the same infrastructure. To make sure everything works well, I used cypress to build tests for each page."}</p>
 
@@ -67,46 +69,40 @@ const A360 = () => (
 
             <p>{"I built several other React components on top of BaseProperty to abstract and share logic such as styling, validity, optional/required, readonly/edit, dependent inputs, loading dropdown items based on a query."}</p>
 
-            <div className="grid gap-[100px] grid-cols-1 md:grid-cols-2 my-[50px] items-center justify-center py-[30px]">
+            <div className="grid gap-[50px] grid-cols-1 md:grid-cols-2 my-[50px] py-[30px]">
                 <PropertyExample
                     title="<TextProperty />"
                     img={text}
-                    minWidthPx="200"
                     widthPx="450" // 1200
                     subtitle="Renders the value as a text input when in edit mode and regular text when in readonly mode"
                 />
                 <PropertyExample
                     title="<TextAreaProperty />"
                     img={description}
-                    minWidthPx="371"
                     widthPx="557" // 2228
                     subtitle="Renders the value as a resizable text area input when in edit mode and regular text when in readonly mode"
                 />
                 <PropertyExample
                     title="<BusinessNameProperty />"
                     img={business}
-                    minWidthPx="272"
                     widthPx="408" // 1632 
                     subtitle="The user is required to fill this in, as denoted by the star"
                 />
                 <PropertyExample
                     title="<IdentifyingNameProperty />"
                     img={identifying}
-                    minWidthPx="299"
                     widthPx="449" // 1796
                     subtitle="This property has custom validation logic relevant to an \'Identifying Name\' built into it "
                 />
                 <PropertyExample
                     title="<DropdownProperty />"
                     img={dropdown}
-                    minWidthPx="194"
                     widthPx="292" // 1168
                     subtitle="Renders the value as a dropdown of passed in options when in edit mode"
                 />
                 <PropertyExample
                     title="<CheckboxProperty />"
                     img={checkbox}
-                    minWidthPx="73"
                     widthPx="110" // 440
                     subtitle="Renders the value as a checkbox which can be toggled when in edit mode"
                 />

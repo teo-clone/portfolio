@@ -4,7 +4,7 @@ import Header from "../Header";
 import ScrollyButton from "./ScrollyButton"
 
 const HomeHeader = () => {
-    const [borderColor, setBorderColor] = useState("border-black");
+    const [borderColor, setBorderColor] = useState("border-gray-400");
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll, { passive: true })
@@ -25,7 +25,7 @@ const HomeHeader = () => {
             setBorderColor("border-blue")
         }
         else {
-            setBorderColor("border-black")
+            setBorderColor("border-gray-400")
         }
     };
 

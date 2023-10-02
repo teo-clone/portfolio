@@ -1,4 +1,5 @@
 import * as React from "react"
+import intus_mock from "../images/intus/intus_mock_v1.mp4"
 import DetailsSection from "../components/project/DetailsSection"
 import ProjectTemplate from "../components/project/ProjectTemplate"
 
@@ -15,9 +16,14 @@ const Intus = () => (
             tags={[]}
         >
 
-            <p>{"All over the world, elderly are in need of care. This can be physical care but also emotional, since many elders struggle from social isolation. Those seeking help traditionally either get care in a nursing home, or at home. Elders that would prefer to receive help in the comfort of their own home, may be blocked by the high cost of at-home care."}</p>
-            <p>{"Intus aims to decrease the high cost of care by removing administrative costs associated with at-home care. Through the application the user would be able to request care both for physical but also for companionship. It also aims to improve patient - caregiver pairing through the use of an algorithm related to the patient's background."}</p>
-            <p>{"Through the application the user can schedule appointments for physical assistance such as: preventative care and screening, assisted activities of daily living, diet advising, medication reminders but also mental health assistance such as: companionship, memory recalling stimulus exercises."}</p>
+            <p>{"All over the world, elderly are in need of physical and mental care. Elders that would prefer to receive help in the comfort of their own home, may be blocked by the high cost of at-home care."}</p>
+            <p>{"Intus aims to enable elderly patients to schedule at home care through the use of a mobile application. Through the application the user can schedule appointments for physical assistance (i.e. preventative care and screening), and also for mental assistance (i.e. memory recalling stimulus exercises)."}</p>
+
+            <div className="flex justify-center">
+                <div className="max-w-xs bg-slate-50 p-5 rounded-md">
+                    <video src={intus_mock} autoPlay loop muted className="rounded-md" />
+                </div>
+            </div>
 
         </DetailsSection>
 
@@ -50,10 +56,12 @@ const Intus = () => (
             title={"INTUS IN THE NEWS"}
             tags={[]}
         >
-
-            <p>{"Boston Globe: These hot R.I. startups are getting lots of buzz, October 2019"}</p>
-            <p>{"MassChallenge Awards over $1M in Cash Prizes to Top Boston and Rhode Island Startups, October 2019"}</p>
-
+            <a href="https://www.bostonglobe.com/metro/rhode-island/2019/10/04/these-hot-startups-are-getting-lots-buzz/1NEu7HIDHZvqvIMrdH7RSN/story.html">
+                <i>Boston Globe: These hot R.I. startups are getting lots of buzz, October 2019</i>
+            </a>
+            <a href="https://masschallenge.org/news/masschallenge-awards-over-1m-cash-prizes-top-boston-rhode-island-startups/">
+                <i> MassChallenge Awards over $1M in Cash Prizes to Top Boston and Rhode Island Startups, October 2019 </i>
+            </a>
         </DetailsSection>
 
     </ProjectTemplate>
