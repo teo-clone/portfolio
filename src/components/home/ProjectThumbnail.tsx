@@ -42,7 +42,7 @@ const ProjectThumbnail = (props: ProjectThumbnailProps) => {
         <div id="right" className="border-b">
             <div className="px-[20px] py-[25px]">
                 <img
-                        className="wombo"
+                    className="wombo"
                     src={props.image.src}
                     alt={props.image.alt}
                 />

@@ -40,8 +40,8 @@ const A360 = () => (
         >
             <p>{"One of the pages I built on Active>360 is the Event creation page. An Event refers to an input that the business wants to observe to potentially make calculations on. "}</p>
             <p>{"In the example below, we can imagine that a Ski Resort may want to send their customers reminders to buy a ski pass when certain weather conditions are met. A business user would then create an Event that comes into the system once a day, a Weather Forecast."}</p>
-            <div className="bg-slate-50 p-5 rounded-md">
-                <video src={event_create} controls autoPlay loop muted className="rounded-md" />
+            <div className="bg-slate-50 p-5 rounded-md my-[50px]">
+                <video src={event_create} controls autoPlay loop muted />
             </div>
             <p>{"The process of creating an Event is divided into sections that the user can focus on individually. An event is most importantly composed of a name, and the fields (the info) that is attached to each incoming instance of the event. In the Weather Forecast event example Forecast Date, Temperature and Snowfall Info seem like appropriate fields we want to know about."}</p>
             <p>{"I ended up creating several other object pages, using a lot of the same infrastructure. To make sure everything works well, I used cypress to build tests for each page."}</p>
@@ -69,7 +69,7 @@ const A360 = () => (
 
             <p>{"I built several other React components on top of BaseProperty to abstract and share logic such as styling, validity, optional/required, readonly/edit, dependent inputs, loading dropdown items based on a query."}</p>
 
-            <div className="grid gap-[50px] grid-cols-1 md:grid-cols-2 my-[50px] py-[30px]">
+            <div className="grid gap-[50px] grid-cols-1 lg:grid-cols-2 my-[50px] py-[30px]">
                 <PropertyExample
                     title="<TextProperty />"
                     img={text}
@@ -92,7 +92,7 @@ const A360 = () => (
                     title="<IdentifyingNameProperty />"
                     img={identifying}
                     widthPx="449" // 1796
-                    subtitle="This property has custom validation logic relevant to an \'Identifying Name\' built into it "
+                    subtitle="This property has custom validation logic relevant to an Identifying Name built into it "
                 />
                 <PropertyExample
                     title="<DropdownProperty />"
@@ -116,42 +116,69 @@ const A360 = () => (
         >
             <p>{"Let us revisit the ski resort example from above. In addition to the Weather Forecast Event, the resort would create a Notification which they want to send to their customers when it is a good time to ski. "}</p>
 
-            <div className="flex justify-center">
-                <img style={{ minWidth: `${150}px`, maxWidth: `${900}px` }} src={notification} alt={"alt"} />
+            <div className="flex justify-center my-[50px]">
+                <div className="flex bg-slate-50 p-5 rounded-md">
+                    <img className="max-w-[900px] w-full" src={notification} alt={"alt"} />
+                </div>
             </div>
+
 
             <p>{"The resort also creates a Watcher to write logic that “watches” the incoming events and sends the desired notification when certain conditions are met. For example, if there is a particularly snowy day coming up, or if the ski season is ending."}</p>
 
-            <div className="flex justify-center">
-                <img style={{ minWidth: `${150}px`, maxWidth: `${900}px` }} src={watcher} alt={"alt"} />
+            <div className="flex justify-center my-[50px]">
+                <div className="flex bg-slate-50 p-5 rounded-md">
+                    <img className="max-w-[900px] w-full" src={watcher} alt={"alt"} />
+                </div>
             </div>
 
             <p>{"The task at hand was to create the UI for populating Notification fields when a Watcher conditions are met, and the Notification is sent."}</p>
             <p>{"In the example above, we need to decide how to populate Where, When, and Inches of Snow, based on how the Watcher was triggered (whether it was because of Weather Forecast or because of some other access of 360)."}</p>
 
-            <div className="flex justify-center">
-                <img style={{ minWidth: `${150}px`, maxWidth: `${900}px` }} src={rulesets} alt={"alt"} />
+            <div className="flex justify-center my-[50px]">
+                <div className="flex bg-slate-50 p-5 rounded-md">
+                    <img className="max-w-[900px] w-full" src={rulesets} alt={"alt"} />
+                </div>
             </div>
 
             <p>{"The dropdown options that appear above (Default / Weather Forecast) are fully derived from the Watcher’s Send Conditions above. Because there is a 1-1 link between a send condition, and a ruleset definition for that condition, I decided to design a UI which more closely couples the two."}</p>
 
-            <div className="flex justify-center">
-                <img style={{ minWidth: `${150}px`, maxWidth: `${1100}px` }} src={rulesets_improved} alt={"alt"} />
+            <div className="flex justify-center my-[50px]">
+                <div className="flex bg-slate-50 p-5 rounded-md">
+                    <img className="max-w-[900px] w-full" src={rulesets_improved} alt={"alt"} />
+                </div>
             </div>
 
             <p>{"And once the user fills in the send conditions and the outputs for each trigger:"}</p>
 
-            <div className="flex justify-center">
-                <img style={{ minWidth: `${150}px`, maxWidth: `${1200}px` }} src={rulesets_improved_filled} alt={"alt"} />
+
+            <div className="flex justify-center my-[50px]">
+                <div className="flex bg-slate-50 p-5 rounded-md">
+                    <img className="max-w-[900px] w-full" src={rulesets_improved_filled} alt={"alt"} />
+                </div>
             </div>
 
             <p>{"The re-design approach I took connects the send conditions and the output definitions into one section. I made several variations of this design to see what fits our application’s aesthetic and what people seemed to like the most."}</p>
 
 
+            <div className="flex justify-center my-[50px]">
+                <div className="flex flex-col items-center gap-[30px] bg-slate-50 p-5 rounded-md">
+                    <div className={"text-sm text-slate-400"}>
+                        {"Variation 1"}
+                    </div>
+                    <img className="max-w-[1100px] w-10/12" src={improved_v2} alt={"alt"} />
+                    <div className={"text-sm text-slate-400"}>
+                        {"Variation 2"}
+                    </div>
+                    <img className="max-w-[1100px] w-10/12" src={improved_v3} alt={"alt"} />
+                    <div className={"text-sm text-slate-400"}>
+                        {"Variation 3"}
+                    </div>
+                    <img className="max-w-[1300px] w-full" src={improved_v4} alt={"alt"} />
+                </div>
+            </div>
+
             <div className="flex flex-wrap justify-center">
-                <img src={improved_v2} alt={"alt"} />
-                <img src={improved_v3} alt={"alt"} />
-                <img src={improved_v4} alt={"alt"} />
+
             </div>
 
 

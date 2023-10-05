@@ -27,3 +27,8 @@ video {
     outline: 4px solid white;
     outline-offset: -4px;
 }
+/* img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+}*/

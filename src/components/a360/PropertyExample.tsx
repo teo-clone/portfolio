@@ -13,11 +13,11 @@ const PropertyExample = ({ title, img, subtitle, widthPx }: PropertyExampleProps
             <div className={"text-sm font-mono"}>
                 {title}
             </div>
-            <div className={"text-sm font-extralight text-slate-400"}>
+            <div className={"text-sm text-slate-400"}>
                 {subtitle}
             </div>
             <div>
-                <img style={{ minWidth: `${widthPx}px`, maxWidth: `${widthPx}px` }} src={img} alt={"alt"} />
+                <img style={{ maxWidth: `${widthPx}px` }} className="w-full" src={img} alt={"alt"} />
             </div>
 
         </div>

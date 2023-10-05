@@ -25,10 +25,10 @@ const DetailsSection = ({ title, tags, children }: PropsWithChildren<DetailsSect
 
     return (
         <>
-            <div className={"font-bold border-t px-[30px] py-[30px]"}>
+            <div className={"font-bold border-t px-[30px] py-[30px] flex"}>
                 <div>{title}</div>
             </div>
-            <div className={"w-[100%] flex flex-col md:border-l border-t px-[30px] py-[30px] gap-[15px]"}>
+            <div className={"flex flex-col md:border-l border-t px-[30px] py-[30px] gap-[15px]"}>
                 {children}
                 <div className="flex wrap gap-[15px]">
                     {tags.map((tag, index) => (

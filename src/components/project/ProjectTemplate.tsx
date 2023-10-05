@@ -52,7 +52,7 @@ const ProjectTemplate = (props: PropsWithChildren<ProjectTemplateProps>) => (
             </div>
         </div>
 
-        <div className="border-blue grid md:grid-cols-[250px_auto] grid-cols-1">
+        <div className="border-blue grid md:grid-cols-[auto_auto] grid-cols-1">
             {props.children}
         </div>
     </div>

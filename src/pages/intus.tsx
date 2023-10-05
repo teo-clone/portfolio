@@ -1,7 +1,27 @@
 import * as React from "react"
 import intus_mock from "../images/intus/intus_mock_v1.mp4"
+import home_v1 from "../images/intus/home_evolution/v1.png"
+import home_v2 from "../images/intus/home_evolution/v2.png"
+import home_v3 from "../images/intus/home_evolution/v3.png"
+import home_v4 from "../images/intus/home_evolution/v4.png"
+import service_v1 from "../images/intus/services/v1.png"
+import service_v2 from "../images/intus/services/v2.png"
+import service_v3 from "../images/intus/services/v3.png"
+import availability_v1 from "../images/intus/availability/v1.png"
+import availability_v21 from "../images/intus/availability/v21.png"
+import availability_v22 from "../images/intus/availability/v22.png"
+import availability_v31 from "../images/intus/availability/v31.png"
+import availability_v32 from "../images/intus/availability/v32.png"
+import caregiver_v1 from "../images/intus/caregiver_preferences/v1.png"
+import caregiver_v2 from "../images/intus/caregiver_preferences/v2.png"
+import caregiver_v3 from "../images/intus/caregiver_preferences/v3.png"
+import summary_v1 from "../images/intus/summary/v1.png"
+import summary_v2 from "../images/intus/summary/v2.png"
+import summary_v3 from "../images/intus/summary/v3.png"
+import summary_v4 from "../images/intus/summary/v4.png"
 import DetailsSection from "../components/project/DetailsSection"
 import ProjectTemplate from "../components/project/ProjectTemplate"
+import AnimatedCarousel from "../components/AnimatedCarousel"
 
 const Intus = () => (
     <ProjectTemplate
@@ -20,8 +40,8 @@ const Intus = () => (
             <p>{"Intus aims to enable elderly patients to schedule at home care through the use of a mobile application. Through the application the user can schedule appointments for physical assistance (i.e. preventative care and screening), and also for mental assistance (i.e. memory recalling stimulus exercises)."}</p>
 
             <div className="flex justify-center">
-                <div className="max-w-xs bg-slate-50 p-5 rounded-md">
-                    <video src={intus_mock} autoPlay loop muted className="rounded-md" />
+                <div className="bg-slate-50 p-5 rounded-md">
+                    <video src={intus_mock} autoPlay loop muted className="max-w-xs w-full rounded-md" />
                 </div>
             </div>
 
@@ -37,18 +57,55 @@ const Intus = () => (
             ]}
         >
 
-            <p>{"Through continued customer interaction and research, I created iterative mocks of the application."}</p>
-            <p>{"<reflect differences between versions>"}</p>
+            <p>{"Through continued customer interaction and research, I created iterative mocks of the application. Through continued customer interaction and market research, I created iterative mocks of the application. For example, here is how the “Create a care request” flow changed over time”"}</p>
+
+            <div className="flex justify-center flex-col items-center gap-[25px]">
+                <AnimatedCarousel
+                    label="Evolution of the home page"
+                    imgs={[home_v1, home_v2, home_v3, home_v4]}
+                />
+                <AnimatedCarousel
+                    label="Evolution of the service selection page"
+                    imgs={[service_v1, service_v2, service_v3]}
+                />
+                <AnimatedCarousel
+                    label="Evolution of the availabily selection page"
+                    imgs={[availability_v1, availability_v21, availability_v22, availability_v31, availability_v32]}
+                />
+                <AnimatedCarousel
+                    label="Evolution of the caregiver preferences page"
+                    imgs={[caregiver_v1, caregiver_v2, caregiver_v3]}
+                />
+                <AnimatedCarousel
+                    label="Evolution of the request summary page"
+                    imgs={[summary_v1, summary_v2, summary_v3, summary_v4]}
+                />
+            </div>
+
+            <p>{"I ended up starting to develop a minimum viable product in Swift / Node.js."}</p>
+
+            <p>{"The functionality I achieved was to allow a care recipient to create an account and profile, go through the care request creation dialog, and submit it. The profile and request data for each user was stored in a database so that it persisted between login sessions."}</p>
 
         </DetailsSection>
 
         <DetailsSection
-            title={"WHAT WE COULD DO"}
+            title={"LESSONS LEARNED"}
             tags={[]}
         >
 
-            <p>{"Ended up developing a minimum viable product in Swift / Node.js. A lesson I learned from the experience was that it was too early to develop the application, as the product wasn't fully stable just yet. It would have been more worthwhile to continue iterating on the prototype, and using prototype interactions for the purpose of demos and market research."}</p>
-            <p>{"Critical feature in the future would be a good patient / caregiver matching algorithm."}</p>
+            <p>{"I would say the biggest lesson I learned from the experience was that it was too early to begin developing the application while the product was not fully defined just yet. "}</p>
+            <p>{"As we spoke to more people in the industry, we got differing opinions of what the exact scope of the application should be. We also found that the public health industry is heavily regulated, which could create issues for us with our plan at the time."}</p>
+            <p>{"I now know it would have been more worthwhile to use a Figma prototype for the purpose of demos and market research, until the product reached a more stable state."}</p>
+        </DetailsSection>
+
+        <DetailsSection
+            title={"FUTURE ADVANCEMENTS"}
+            tags={[]}
+        >
+
+            <p>{"An important feature to add would be if we developed a patient / caregiver matching algorithm."}</p>
+            <p>{"This could be based on a number of factors such as: location proximity, languages spoken, prior experience that a caregiver has providing certain types of assistance."}</p>
+            <p>{"We could also introduce hobbies / interests (e.g. reading, sports, film etc) on user profiles to match those and allow users to have a better idea of the personality of their patient / caregiver."}</p>
 
         </DetailsSection>
 
