@@ -62,7 +62,6 @@ const A360 = () => (
                 <PropertyExample
                     title="<BaseProperty />"
                     img={base}
-                    widthPx="157" // 628
                     subtitle="In the example above, Favorite Fruit is the label and an image of a fig is the value"
                 />
             </div>
@@ -73,37 +72,31 @@ const A360 = () => (
                 <PropertyExample
                     title="<TextProperty />"
                     img={text}
-                    widthPx="450" // 1200
                     subtitle="Renders the value as a text input when in edit mode and regular text when in readonly mode"
                 />
                 <PropertyExample
                     title="<TextAreaProperty />"
                     img={description}
-                    widthPx="557" // 2228
                     subtitle="Renders the value as a resizable text area input when in edit mode and regular text when in readonly mode"
                 />
                 <PropertyExample
                     title="<BusinessNameProperty />"
                     img={business}
-                    widthPx="408" // 1632 
                     subtitle="The user is required to fill this in, as denoted by the star"
                 />
                 <PropertyExample
                     title="<IdentifyingNameProperty />"
                     img={identifying}
-                    widthPx="449" // 1796
                     subtitle="This property has custom validation logic relevant to an Identifying Name built into it "
                 />
                 <PropertyExample
                     title="<DropdownProperty />"
                     img={dropdown}
-                    widthPx="292" // 1168
                     subtitle="Renders the value as a dropdown of passed in options when in edit mode"
                 />
                 <PropertyExample
                     title="<CheckboxProperty />"
                     img={checkbox}
-                    widthPx="110" // 440
                     subtitle="Renders the value as a checkbox which can be toggled when in edit mode"
                 />
             </div>
