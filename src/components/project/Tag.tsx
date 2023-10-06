@@ -10,7 +10,7 @@ const Tag = (props: TagProps) => (
         className={"border-blue relative text-center"}
     >
         <img
-            className={"h-[33px] w-[100px]"}
+            className={"h-[33px] min-w-[100px] w-[100px]"}
             src={blue_ellipse}
         />
         <div

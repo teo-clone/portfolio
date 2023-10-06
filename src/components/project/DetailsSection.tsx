@@ -27,7 +27,7 @@ const DetailsSection = ({ title, tags, children }: PropsWithChildren<DetailsSect
         <>
             <div className={"flex flex-col border-t gap-[30px] px-[30px] py-[30px]"}>
                 <div className={"font-bold"}>{title}</div>
-                <div className="flex flex-col gap-[15px]">
+                <div className="flex flex-wrap gap-[15px]">
                     {tags.map((tag, index) => (
                         <Tag key={index} label={tag} />
                     ))}
