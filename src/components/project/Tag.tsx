@@ -14,7 +14,7 @@ const Tag = (props: TagProps) => (
             src={blue_ellipse}
         />
         <div
-            className={"absolute top-[10%] left-[10%]"}
+            className={"absolute top-[10%] left-[15px]"}
         >
             {props.label}
         </div>
