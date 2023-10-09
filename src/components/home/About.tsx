@@ -10,7 +10,7 @@ import ToolboxLanguageSection from "./toolbox/ToolboxLanguageSection"
 import HoverGifinator from "./HoverGifinator"
 
 const About = () => (
-    <div id="about" className="border-green border-t-2">
+    <div id="about" className="border-green border-t">
 
         <div className="grid md:grid-cols-2 grid-cols-1">
             <div id="left" className="p-[10px] w-full md:border-r">
