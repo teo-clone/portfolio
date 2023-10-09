@@ -16,7 +16,7 @@ const HoverGifinator: React.FC<HoverGifinatorProps> = ({ gifSrc, label }) => {
                     onMouseEnter={() => setIsPlaying(true)}
                     onMouseLeave={() => setIsPlaying(false)}
                 >
-                <span className="italic underline hover:cursor-pointer">{label}</span>
+                    <span className="italic underline hover:cursor-pointer whitespace-nowrap">{label}</span>
                 </div>
                 {isPlaying && (
                     <img

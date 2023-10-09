@@ -1,15 +1,18 @@
 import * as React from "react"
-import blue_ellipse from "../../images/blue_ellipse.png"
-import green_elipse from "../../images/green_ellipse.png"
 
 export interface ScrollyButtonProps {
     label: string,
-    sectionID: string,
+    sectionID?: string,
     color: string
 }
 
 const ScrollyButton = (props: ScrollyButtonProps) => {
     const scrollToSection = () => {
+        if (!props.sectionID) {
+            window.scrollTo({ top: 0, behavior: "smooth" })
+            return;
+        }
+
         var headerOffset = 79 // really 80 but 1 less to make header border def change
         var elementPosition = document.getElementById(props.sectionID)?.getBoundingClientRect().top ?? 0
         var offsetPosition = elementPosition + window.scrollY - headerOffset
@@ -22,33 +25,18 @@ const ScrollyButton = (props: ScrollyButtonProps) => {
 
     // These maps are queried below to set the classNames
     const colorVariants = new Map([
-        ["blue", "text-blue border-blue"],
-        ["green", "text-green border-green"],
-    ])
-    const imageVariants = new Map([
-        ["blue", blue_ellipse],
-        ["green", green_elipse],
-    ])
-    const translateVariants = new Map([
-        ["blue", "-translate-x-8 -translate-y-3"],
-        ["green", "-translate-x-5 -translate-y-3"],
+        ["black", "text-black black-scrolly-btn"],
+        ["blue", "text-blue blue-scrolly-btn"],
+        ["green", "text-green green-scrolly-btn"],
     ])
 
     return <button
         onClick={scrollToSection}>
         <div
-            id="scrolly-button-content-container"
-            className={`${colorVariants.get(props.color)} relative text-center`}
+            id="scrolly-text"
+            className={`${colorVariants.get(props.color)} text-2xl text-left`}
         >
-            <img
-                className={"h-[33px] w-[90px]"}
-                src={imageVariants.get(props.color)}
-            />
-            <div
-                className={`font-medium absolute top-[50%] left-[50%] ${translateVariants.get(props.color)}`}
-            >
-                {props.label}
-            </div>
+            {props.label}
         </div>
     </button>
 }

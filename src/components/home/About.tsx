@@ -2,6 +2,7 @@ import * as React from "react"
 import me from "../../images/me.jpeg"
 import biking from "../../images/biking.gif"
 import amigos from "../../images/amigos.gif"
+import playlists from "../../images/playlists.gif"
 
 import ToolboxCodeSection from "./toolbox/ToolboxCodeSection"
 import ToolboxDesignSection from "./toolbox/ToolboxDesignSection"
@@ -16,7 +17,7 @@ const About = () => (
                 <img src={me} />
             </div>
 
-            <div id="right" className="md:border-none border-t py-[30px] px-[30px]">
+            <div id="right" className="md:border-none border-t py-[30px] px-[20px]">
                 <div className="flex flex-col gap-[10px]">
                     <div>
                         Γεια!
@@ -32,7 +33,7 @@ const About = () => (
                     </div>
                     <div>
                         When I am not working I am&nbsp;
-                        <div className="flex gap-[5px]">
+                        <div className="flex flex-wrap gap-[5px]">
                             <HoverGifinator
                                 gifSrc={amigos}
                                 label={"seeing friends, "}
@@ -41,7 +42,7 @@ const About = () => (
                                 gifSrc={biking}
                                 label={"biking, "}
                             />
-                            <HoverGifinator gifSrc={""} label={"X, "} />
+                            <HoverGifinator gifSrc={playlists} label={"making covers for my playlists, "} />
                             <HoverGifinator gifSrc={""} label={"Y, "} />
                             <HoverGifinator gifSrc={""} label={"Z"} />
                         </div>
@@ -51,7 +52,7 @@ const About = () => (
         </div>
 
         <div className="flex wrap grow flex-col">
-            <div className="border-t py-[30px] px-[30px] font-bold">
+            <div className="border-t py-[30px] px-[20px] font-bold">
                 TOOLBOX
             </div>
 

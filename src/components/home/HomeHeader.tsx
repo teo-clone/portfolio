@@ -4,7 +4,7 @@ import Header from "../Header";
 import ScrollyButton from "./ScrollyButton"
 
 const HomeHeader = () => {
-    const [borderColor, setBorderColor] = useState("border-gray-400");
+    const [borderColor, setBorderColor] = useState("border-gray-600");
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll, { passive: true })
@@ -25,7 +25,7 @@ const HomeHeader = () => {
             setBorderColor("border-blue")
         }
         else {
-            setBorderColor("border-gray-400")
+            setBorderColor("border-gray-600")
         }
     };
 
@@ -34,18 +34,16 @@ const HomeHeader = () => {
             title="Teo Tsivranidis"
             borderColor={borderColor}
         >
-            <div className="flex gap-[10px]">
-                <ScrollyButton
-                    label="projects"
-                    sectionID="projects"
-                    color="blue"
-                />
-                <ScrollyButton
-                    label="about"
-                    sectionID="about"
-                    color="green"
-                />
-            </div>
+            <ScrollyButton
+                label="Projects"
+                sectionID="projects"
+                color="blue"
+            />
+            <ScrollyButton
+                label="About"
+                sectionID="about"
+                color="green"
+            />
         </Header>
 
     </>
