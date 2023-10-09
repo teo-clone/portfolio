@@ -6,6 +6,7 @@ import Footer from "../components/home/Footer"
 
 const HomePage = () => (
   <div>
+
     <HomeHeader />
 
     <div className="px-[20px] py-[30px]">
@@ -22,3 +23,9 @@ const HomePage = () => (
 )
 
 export default HomePage
+
+export function Head() {
+  return (
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  )
+}
