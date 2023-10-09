@@ -16,7 +16,7 @@ video {
     font-family: "Arial Rounded MT Bold", Arial, sans-serif;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 500px) {
 .black-scrolly-btn:hover {
     color: black;
     -webkit-text-fill-color: white;

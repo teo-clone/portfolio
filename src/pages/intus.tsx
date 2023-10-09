@@ -41,7 +41,7 @@ const Intus = () => (
 
             <div className="flex justify-center">
                 <div className="bg-slate-50 p-5 rounded-md">
-                    <video src={intus_mock} autoPlay loop muted className="max-w-xs w-full rounded-md" />
+                    <video src={intus_mock} controls autoPlay loop muted className="max-w-xs w-full rounded-md" />
                 </div>
             </div>
 
