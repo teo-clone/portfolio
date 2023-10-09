@@ -13,7 +13,7 @@ const Header = ({ title, borderColor, children }: PropsWithChildren<HeaderProps>
     const padding = ["px-[20px]", "py-[30px]"]
     const sticky = ["sticky", "top-0", "bg-white", "z-50"]
     const spacing = ["flex", "justify-between", "items-center"]
-    const border = [borderColor, "border-b-2"]
+    const border = ["border-b"]
 
     const styles = [
         ...padding,
@@ -22,16 +22,20 @@ const Header = ({ title, borderColor, children }: PropsWithChildren<HeaderProps>
         ...border,
     ]
 
-    return <div className={styles.join(" ")}>
+    return <div className={sticky.join(" ") + " flex flex-col border-b"}>
+        <div className={styles.join(" ")}>
 
-        <ScrollyButton
-            label={title}
-            color="black"
-        />
+            <ScrollyButton
+                label={title}
+                color="black"
+            />
 
-        <div className="flex justify-end gap-[20px]">
-            {children}
+            <div className="flex justify-end gap-[20px]">
+                {children}
+            </div>
+
         </div>
+        <div className={`header-border ${borderColor}`}></div>
     </div>
 }
 

@@ -19,13 +19,13 @@ const HomeHeader = () => {
         let about = ab?.getBoundingClientRect();
 
         if (about && about.top < 80) {
-            setBorderColor("border-green")
+            setBorderColor("header-green")
         }
         else if (projects && projects.top < 80) {
-            setBorderColor("border-blue")
+            setBorderColor("header-blue")
         }
         else {
-            setBorderColor("border-gray-600")
+            setBorderColor("header-black")
         }
     };
 
