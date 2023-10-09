@@ -31,7 +31,7 @@ const HomeHeader = () => {
 
     return <>
         <Header
-            title="Teo Tsivranidis"
+            title={"Teo Tsivranidis"}
             borderColor={borderColor}
         >
             <ScrollyButton

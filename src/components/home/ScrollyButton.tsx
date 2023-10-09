@@ -34,7 +34,7 @@ const ScrollyButton = (props: ScrollyButtonProps) => {
         onClick={scrollToSection}>
         <div
             id="scrolly-text"
-            className={`${colorVariants.get(props.color)} text-2xl text-left`}
+            className={`${colorVariants.get(props.color)} text-left text-xl min-[500px]:text-2xl`}
         >
             {props.label}
         </div>
