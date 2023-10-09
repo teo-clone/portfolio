@@ -16,23 +16,23 @@ video {
     font-family: "Arial Rounded MT Bold", Arial, sans-serif;
 }
 
+@media (min-width: 400px) {
 .black-scrolly-btn:hover {
     color: black;
     -webkit-text-fill-color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
 }
-
 .blue-scrolly-btn:hover {
     color: #3B8BEB;
     -webkit-text-fill-color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #3B8BEB;
 }
-
 .green-scrolly-btn:hover {
     color: #5CD595;
     -webkit-text-fill-color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #5CD595;
+}
 }
