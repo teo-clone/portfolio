@@ -30,7 +30,7 @@ const Header = ({ title, borderColor, children }: PropsWithChildren<HeaderProps>
             color="black"
         />
 
-        <div className="flex gap-[20px]">
+        <div className="flex justify-end min-[500px]:gap-[20px] max-[500px]:flex-col">
             {children}
         </div>
     </div>
