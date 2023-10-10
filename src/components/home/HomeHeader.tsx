@@ -18,10 +18,10 @@ const HomeHeader = () => {
         let ab = document.getElementById("about");
         let about = ab?.getBoundingClientRect();
 
-        if (about && about.top < 80) {
+        if (about && about.top < 95) {
             setBorderColor("header-green")
         }
-        else if (projects && projects.top < 80) {
+        else if (projects && projects.top < 95) {
             setBorderColor("header-blue")
         }
         else {
