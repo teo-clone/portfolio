@@ -11,7 +11,7 @@ export interface HeaderProps {
 const Header = ({ title, borderColor, children }: PropsWithChildren<HeaderProps>) => {
 
     const padding = ["px-[20px]", "py-[30px]"]
-    const sticky = ["sticky", "top-0", "bg-white", "z-50"]
+    const sticky = ["sticky", "top-0", "bg-white", "bg-opacity-50", "z-50"]
     const spacing = ["flex", "justify-between", "items-center"]
     const border = ["border-b"]
 

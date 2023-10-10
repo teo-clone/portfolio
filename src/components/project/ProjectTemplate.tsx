@@ -17,7 +17,7 @@ const ProjectTemplate = (props: PropsWithChildren<ProjectTemplateProps>) => (
     <div>
         <Header
             title={props.title}
-            borderColor="border-blue"
+            borderColor="header-blue"
         >
             <Link to="/">
                 <img

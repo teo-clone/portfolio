@@ -21,30 +21,28 @@ video {
     background: yellow;
     width: 100vw;
     z-index: 2;
-    background: repeating-linear-gradient(to right, rgb(230, 209, 157), rgb(230, 209, 157), #1b1b1b 100px, #1b1b1b 140px);
+    background: repeating-linear-gradient(to right, rgb(244, 234, 208), rgb(244, 234, 208), #ffffff 100px, #ffffff 140px);
     background-size: 200% 200%;
     animation: slide 100s linear infinite;
 }
 
 .header-blue {
-    background: repeating-linear-gradient(to right, rgb(230, 209, 157), rgb(230, 209, 157), #3B8BEB 100px, #3B8BEB 140px);
+    background: repeating-linear-gradient(to right, rgb(244, 234, 208), rgb(244, 234, 208), #3B8BEB 100px, #3B8BEB 140px);
     background-size: 200% 200%;
-
 }
 
 .header-green {
-    background: repeating-linear-gradient(to right, rgb(230, 209, 157), rgb(230, 209, 157), #5CD595 100px, #5CD595 140px);
+    background: repeating-linear-gradient(to right, rgb(244, 234, 208), rgb(244, 234, 208), #5CD595 100px, #5CD595 140px);
     background-size: 200% 200%;
-
 }
 
 @keyframes slide {
     0% {
-        background-position: -200% -0%;
+        background-position: 0% -0%;
     }
 
     100% {
-        background-position: 0% 0%;
+        background-position: -200% 0%;
     }
 }
 @media (min-width: 500px) {
