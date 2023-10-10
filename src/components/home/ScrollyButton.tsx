@@ -13,7 +13,7 @@ const ScrollyButton = (props: ScrollyButtonProps) => {
             return;
         }
 
-        var headerOffset = 79 // really 80 but 1 less to make header border def change
+        var headerOffset = 93
         var elementPosition = document.getElementById(props.sectionID)?.getBoundingClientRect().top ?? 0
         var offsetPosition = elementPosition + window.scrollY - headerOffset
 
