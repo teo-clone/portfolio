@@ -10,7 +10,9 @@ export interface LinkButtonProps {
 
 const LinkButton = ({ label, to }: LinkButtonProps) => {
 
-    const [colorIndex, increaseColorIndex] = useState(0);
+    const [colorIndex, increaseColorIndex] = useState(
+        Math.floor(Math.random() * 8)
+    );
 
     const handleHover = () => {
         increaseColorIndex((colorIndex + 1) % 8);
