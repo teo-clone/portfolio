@@ -29,9 +29,9 @@ const LinkButton = ({ label, to }: LinkButtonProps) => {
         'hover:bg-[#800080]', // Purple
     ];
 
-    return <Link to={to}>
+    return <Link to={to} className="w-fit">
         <div
-            className={`border-2 border-black ${primaryColors[colorIndex]} hover:text-white flex justify-center w-20 p-1 inline-block`}
+            className={`border border-black ${primaryColors[colorIndex]} hover:text-white flex justify-center w-20 p-1 inline-block`}
             onMouseLeave={handleHover}
         >
             {label}

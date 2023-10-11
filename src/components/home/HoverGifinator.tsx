@@ -3,27 +3,20 @@ import React from 'react';
 type HoverGifinatorProps = {
     gifSrc: string;
     label: string;
+    updateGif: (newGif: string | undefined) => void;
 };
 
-const HoverGifinator: React.FC<HoverGifinatorProps> = ({ gifSrc, label }) => {
-    const [isPlaying, setIsPlaying] = React.useState(false);
-
+const HoverGifinator: React.FC<HoverGifinatorProps> = ({ gifSrc, label, updateGif }) => {
     return (
         <div>
-            <div className="relative">
+            <div className="bg-yellow-200 relative">
                 <div
                     className=""
-                    onMouseEnter={() => setIsPlaying(true)}
-                    onMouseLeave={() => setIsPlaying(false)}
+                    onMouseEnter={() => updateGif(gifSrc)}
+                    onMouseLeave={() => updateGif(undefined)}
                 >
-                    <span className="italic underline hover:cursor-pointer whitespace-nowrap">{label}</span>
+                    <span className="hover:cursor-pointer whitespace-nowrap">{label}</span>
                 </div>
-                {isPlaying && (
-                    <img
-                        src={gifSrc}
-                        alt="hover-gifinator"
-                    />
-                )}
             </div>
         </div>
     );
