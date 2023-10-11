@@ -14,8 +14,8 @@ const HomePage = () => (
     </div>
 
     <div className="flex flex-col gap-[40px]">
-      <Projects />
       <About />
+      <Projects />
     </div>
 
     <Footer />

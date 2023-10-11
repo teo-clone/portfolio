@@ -2,6 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 
 import { useMediaQuery } from "react-responsive";
+import LinkButton from "./LinkButton";
 
 export interface ImageProps {
     id: string,
@@ -32,9 +33,14 @@ const ProjectThumbnail = (props: ProjectThumbnailProps) => {
                         {props.timeline}
                     </div>
                 </div>
-                <div className="max-w-[400px] px-[20px] py-[25px] flex flex-col gap-10">
+                <div className="px-[20px] py-[25px] flex flex-col gap-10">
+                    <div className="max-w-[400px]">
                     {props.description}
-                    <Link to={props.fullInfoUrl}>{"More >>"}</Link>
+                    </div>
+                    <LinkButton
+                        label={"More >>"}
+                        to={props.fullInfoUrl}
+                    />
                 </div>
             </div>
         </div>

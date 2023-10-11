@@ -42,7 +42,7 @@ const About = () => (
                                 gifSrc={biking}
                                 label={"biking, "}
                             />
-                            <HoverGifinator gifSrc={playlists} label={"making covers for my playlists, "} />
+                            <HoverGifinator gifSrc={playlists} label={"making playlist covers, "} />
                             <HoverGifinator gifSrc={""} label={"Y, "} />
                             <HoverGifinator gifSrc={""} label={"Z"} />
                         </div>

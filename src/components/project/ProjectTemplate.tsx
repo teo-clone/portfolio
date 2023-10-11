@@ -4,6 +4,7 @@ import Header from "../Header"
 import { PropsWithChildren } from "react"
 import x from "../../images/x.png"
 import KeyInfoSection from "./KeyInfoSection"
+import LinkButton from "../home/LinkButton"
 
 export interface ProjectTemplateProps {
     title: string,
@@ -19,12 +20,10 @@ const ProjectTemplate = (props: PropsWithChildren<ProjectTemplateProps>) => (
             title={props.title}
             borderColor="header-blue"
         >
-            <Link to="/">
-                <img
-                    className={"h-[15px] w-[15px]"}
-                    src={x}
-                />
-            </Link>
+            <LinkButton
+                label={"Close"}
+                to={"/"}
+            />
         </Header>
 
         <div className="border-blue grid md:grid-cols-2 grid-cols-1">

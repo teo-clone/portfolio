@@ -18,11 +18,11 @@ const HomeHeader = () => {
         let ab = document.getElementById("about");
         let about = ab?.getBoundingClientRect();
 
-        if (about && about.top < 95) {
-            setBorderColor("header-green")
-        }
-        else if (projects && projects.top < 95) {
+        if (projects && projects.top < 95) {
             setBorderColor("header-blue")
+        }
+        else if (about && about.top < 95) {
+            setBorderColor("header-green")
         }
         else {
             setBorderColor("header-black")
@@ -35,14 +35,14 @@ const HomeHeader = () => {
             borderColor={borderColor}
         >
             <ScrollyButton
-                label="Projects"
-                sectionID="projects"
-                color="blue"
-            />
-            <ScrollyButton
                 label="About"
                 sectionID="about"
                 color="green"
+            />
+            <ScrollyButton
+                label="Projects"
+                sectionID="projects"
+                color="blue"
             />
         </Header>
 
