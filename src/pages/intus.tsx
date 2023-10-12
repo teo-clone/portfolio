@@ -82,11 +82,12 @@ const Intus = () => (
                 />
             </div>
 
-            <p>{"Putting the final version of the \"Create a care request\" flow together:"}</p>
+            {/* TODO: */}
+            {/* <p>{"Putting the final version of the \"Create a care request\" flow together:"}</p>
             <AnimatedCarousel
                 label="Evolution of the request summary page"
                 imgs={[summary_v1, summary_v2, summary_v3, summary_v4]}
-            />
+            /> */}
 
             <p>{"I ended up starting to develop a minimum viable product in Swift / Node.js."}</p>
 
