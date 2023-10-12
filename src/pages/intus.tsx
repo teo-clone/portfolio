@@ -39,7 +39,7 @@ const Intus = () => (
             <p>{"All over the world, elderly are in need of physical and mental care. Elders that would prefer to receive help in the comfort of their own home, may be blocked by the high cost of at-home care."}</p>
             <p>{"Intus aims to enable elderly patients to schedule at home care through the use of a mobile application. Through the application the user can schedule appointments for physical assistance (i.e. preventative care and screening), and also for mental assistance (i.e. memory recalling stimulus exercises)."}</p>
 
-            <div className="flex justify-center">
+            <div className="flex justify-center my-[30px]">
                 <div className="bg-slate-50 p-5 rounded-md">
                     <video src={intus_mock} controls autoPlay loop muted className="max-w-xs w-full rounded-md" />
                 </div>
@@ -57,9 +57,9 @@ const Intus = () => (
             ]}
         >
 
-            <p>{"Through continued customer interaction and research, I created iterative mocks of the application. Through continued customer interaction and market research, I created iterative mocks of the application. For example, here is how the “Create a care request” flow changed over time”"}</p>
+            <p>{"Through continued customer interaction and market research, I created iterative mocks of the application. For example, here is how the \"Create a care request\" flow changed over time”"}</p>
 
-            <div className="flex justify-center flex-col items-center gap-[25px]">
+            <div className="flex justify-center flex-col items-center gap-[30px] my-[30px]">
                 <AnimatedCarousel
                     label="Evolution of the home page"
                     imgs={[home_v1, home_v2, home_v3, home_v4]}
@@ -81,6 +81,12 @@ const Intus = () => (
                     imgs={[summary_v1, summary_v2, summary_v3, summary_v4]}
                 />
             </div>
+
+            <p>{"Putting the final version of the \"Create a care request\" flow together:"}</p>
+            <AnimatedCarousel
+                label="Evolution of the request summary page"
+                imgs={[summary_v1, summary_v2, summary_v3, summary_v4]}
+            />
 
             <p>{"I ended up starting to develop a minimum viable product in Swift / Node.js."}</p>
 
@@ -113,10 +119,10 @@ const Intus = () => (
             title={"INTUS IN THE NEWS"}
             tags={[]}
         >
-            <a href="https://www.bostonglobe.com/metro/rhode-island/2019/10/04/these-hot-startups-are-getting-lots-buzz/1NEu7HIDHZvqvIMrdH7RSN/story.html">
+            <a className="underline text-blue" href="https://www.bostonglobe.com/metro/rhode-island/2019/10/04/these-hot-startups-are-getting-lots-buzz/1NEu7HIDHZvqvIMrdH7RSN/story.html">
                 <i>Boston Globe: These hot R.I. startups are getting lots of buzz, October 2019</i>
             </a>
-            <a href="https://masschallenge.org/news/masschallenge-awards-over-1m-cash-prizes-top-boston-rhode-island-startups/">
+            <a className="underline text-blue" href="https://masschallenge.org/news/masschallenge-awards-over-1m-cash-prizes-top-boston-rhode-island-startups/">
                 <i> MassChallenge Awards over $1M in Cash Prizes to Top Boston and Rhode Island Startups, October 2019 </i>
             </a>
         </DetailsSection>

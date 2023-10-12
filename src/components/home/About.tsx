@@ -22,42 +22,32 @@ const About = () => {
                 </div>
 
                 <div id="right" className="md:border-none border-t py-[30px] px-[20px]">
-                    <div className="flex flex-col gap-[10px]">
+                    <div className="flex flex-col gap-[10px] max-w-[450px]">
                         <div>
                             {"Γεια!"}
                         </div>
-                        <div className="max-w-[400px]">
+                        <div>
                             {"My name is Theodoros Tsivranidis. My friends call me Teo."}
                         </div>
-                        <div className="max-w-[400px]">
+                        <div>
                             {"I am a software developer and designer currently based in Brooklyn, NY."}
                         </div>
-                        <div className="max-w-[400px]">
-                            {"I love to think about software as a process from beginning to end including the market research, Figma prototyping, and product development."}
-                        </div>
-                        <div className="max-w-[400px]">
-                            {"My most recent full time job was at Ab Initio on the Active>360 team as a full-stack developer and UI designer."}
-                        </div>
-                        <div className="max-w-[400px]">
-                            {"Before Ab Initio, I was at Brown University where I graduated with a Computer Science Sc.B. degree in 2020."}
+                        <div>
+                            {"I love to think about products as a process from beginning to end including the market research, prototyping, and development."}
                         </div>
                         <div>
-                            When I am not working I am&nbsp;
-                            <div className="flex flex-wrap gap-[5px]">
-                                <div className="flex">
-                                    <HoverGifinator gifSrc={amigos} label={"seeing friends"} updateGif={setGif} />,
-                                </div>
-                                <div className="flex">
-                                    <HoverGifinator gifSrc={biking} label={"biking"} updateGif={setGif} />,
-                                </div>
-                                <div className="flex">
-                                    <HoverGifinator gifSrc={playlists} label={"making playlist covers"} updateGif={setGif} />,
-                                </div>
-                                <div className="flex">
-                                    <HoverGifinator gifSrc={""} label={"Y"} updateGif={setGif} />,
-                                </div>
-                                <HoverGifinator gifSrc={""} label={"Z"} updateGif={setGif} />
-                            </div>
+                            {"My most recent full time job was at Ab Initio on the Active>360 team as a full-stack developer and UI designer."}
+                        </div>
+                        <div>
+                            {"Before Ab Initio, I was at Brown University where I graduated with a Computer Science Sc.B. degree in 2020."}
+                        </div>
+                        <div className="flex flex-wrap gap-[5px]">
+                            {"When I am not working I am"}
+                            <HoverGifinator gifSrc={amigos} label={"seeing friends"} updateGif={setGif} />,
+                            <HoverGifinator gifSrc={biking} label={"biking"} updateGif={setGif} />,
+                            <HoverGifinator gifSrc={playlists} label={"making playlist covers"} updateGif={setGif} />,
+                            <HoverGifinator gifSrc={""} label={"Y"} updateGif={setGif} />,
+                            <HoverGifinator gifSrc={""} label={"Z"} updateGif={setGif} />
                         </div>
                         {gif && (
                             <img

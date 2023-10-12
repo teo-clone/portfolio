@@ -9,7 +9,7 @@ const HomePage = () => (
 
     <HomeHeader />
 
-    <div className="flex flex-col gap-[40px] py-[40px]">
+    <div className="flex flex-col gap-[80px] py-[40px]">
       <About />
       <Projects />
     </div>
