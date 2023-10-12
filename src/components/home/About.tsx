@@ -24,16 +24,22 @@ const About = () => {
                 <div id="right" className="md:border-none border-t py-[30px] px-[20px]">
                     <div className="flex flex-col gap-[10px]">
                         <div>
-                            Hi!
+                            {"Γεια!"}
                         </div>
                         <div className="max-w-[400px]">
-                            My name is Theodoros Tsivranidis. My friends call me Teo.
+                            {"My name is Theodoros Tsivranidis. My friends call me Teo."}
                         </div>
                         <div className="max-w-[400px]">
-                            I currently work full time at Ab Initio as a software developer and UI designer.
+                            {"I am a software developer and designer currently based in Brooklyn, NY."}
                         </div>
                         <div className="max-w-[400px]">
-                            Before Ab Initio, I was at Brown University where I graduated with a Computer Science degree in 2020.
+                            {"I love to think about software as a process from beginning to end including the market research, Figma prototyping, and product development."}
+                        </div>
+                        <div className="max-w-[400px]">
+                            {"My most recent full time job was at Ab Initio on the Active>360 team as a full-stack developer and UI designer."}
+                        </div>
+                        <div className="max-w-[400px]">
+                            {"Before Ab Initio, I was at Brown University where I graduated with a Computer Science Sc.B. degree in 2020."}
                         </div>
                         <div>
                             When I am not working I am&nbsp;

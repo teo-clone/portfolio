@@ -9,7 +9,7 @@ type HoverGifinatorProps = {
 const HoverGifinator: React.FC<HoverGifinatorProps> = ({ gifSrc, label, updateGif }) => {
     return (
         <div>
-            <div className="bg-yellow-200 relative">
+            <div className="bg-yellow-100 relative">
                 <div
                     className=""
                     onMouseEnter={() => updateGif(gifSrc)}
