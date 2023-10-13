@@ -19,6 +19,13 @@ import summary_v1 from "../images/intus/summary/v1.png"
 import summary_v2 from "../images/intus/summary/v2.png"
 import summary_v3 from "../images/intus/summary/v3.png"
 import summary_v4 from "../images/intus/summary/v4.png"
+import final_home from "../images/intus/final_care_request/home.png"
+import final1 from "../images/intus/final_care_request/new_job1.png"
+import final2 from "../images/intus/final_care_request/new_job2.png"
+import final3 from "../images/intus/final_care_request/new_job3.png"
+import final4 from "../images/intus/final_care_request/new_job4.png"
+import final5 from "../images/intus/final_care_request/new_job5.png"
+import final_review from "../images/intus/final_care_request/new_job_review.png"
 import DetailsSection from "../components/project/DetailsSection"
 import ProjectTemplate from "../components/project/ProjectTemplate"
 import AnimatedCarousel from "../components/AnimatedCarousel"
@@ -82,14 +89,12 @@ const Intus = () => (
                 />
             </div>
 
-            {/* TODO: */}
-            {/* <p>{"Putting the final version of the \"Create a care request\" flow together:"}</p>
+            <p>{"Putting the final version of the \"Create a care request\" flow together:"}</p>
             <AnimatedCarousel
-                label="Evolution of the request summary page"
-                imgs={[summary_v1, summary_v2, summary_v3, summary_v4]}
-            /> */}
+                imgs={[final_home, final1, final2, final3, final4, final5, final_review]}
+            />
 
-            <p>{"I ended up starting to develop a minimum viable product in Swift / Node.js."}</p>
+            <p>{"I ended up developing a minimum viable product in Swift / Node.js."}</p>
 
             <p>{"The functionality I achieved was to allow a care recipient to create an account and profile, go through the care request creation dialog, and submit it. The profile and request data for each user was stored in a database so that it persisted between login sessions."}</p>
 
