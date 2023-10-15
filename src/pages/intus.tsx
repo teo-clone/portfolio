@@ -90,9 +90,11 @@ const Intus = () => (
             </div>
 
             <p>{"Putting the final version of the \"Create a care request\" flow together:"}</p>
-            <AnimatedCarousel
-                imgs={[final_home, final1, final2, final3, final4, final5, final_review]}
-            />
+            <div className="flex justify-center">
+                <AnimatedCarousel
+                    imgs={[final_home, final1, final2, final3, final4, final5, final_review]}
+                />
+            </div>
 
             <p>{"I ended up developing a minimum viable product in Swift / Node.js."}</p>
 
