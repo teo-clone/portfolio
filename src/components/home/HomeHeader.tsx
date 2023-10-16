@@ -2,6 +2,7 @@ import * as React from "react"
 import { useEffect, useState } from "react";
 import Header from "../Header";
 import ScrollyButton from "./ScrollyButton"
+import { useMediaQuery } from "react-responsive";
 
 const HomeHeader = () => {
     const [borderColor, setBorderColor] = useState("border-gray-600");
@@ -12,7 +13,6 @@ const HomeHeader = () => {
     }, []);
 
     const handleScroll = () => {
-
 
         let ab = document.getElementById("about");
         let about = ab?.getBoundingClientRect();
@@ -37,9 +37,11 @@ const HomeHeader = () => {
         }
     };
 
+    const isBigScreen = useMediaQuery({ query: '(min-width: 450px)' })
+
     return <>
         <Header
-            title={"Teo Tsivranidis"}
+            title={isBigScreen ? "Teo Tsivranidis" : "Teo T"}
             borderColor={borderColor}
         >
             <ScrollyButton
