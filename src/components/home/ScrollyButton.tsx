@@ -28,6 +28,7 @@ const ScrollyButton = (props: ScrollyButtonProps) => {
         ["black", "text-black black-scrolly-btn"],
         ["blue", "text-blue blue-scrolly-btn"],
         ["green", "text-green green-scrolly-btn"],
+        ["red", "text-red red-scrolly-btn"],
     ])
 
     return <button

@@ -2,7 +2,10 @@ import * as React from "react"
 import { Link } from "gatsby"
 
 import { useMediaQuery } from "react-responsive";
-import LinkButton from "./LinkButton";
+import LinkButton from "../LinkButton";
+import GatsbyLinkButton from "../GatsbyLinkButton";
+
+import double_right from "../../images/double_right.png"
 
 export interface ImageProps {
     id: string,
@@ -11,16 +14,13 @@ export interface ImageProps {
 }
 
 export interface ProjectThumbnailProps {
-    fullInfoUrl: string,
     title: string,
     timeline: string,
     description: string,
     image: ImageProps
 }
 
-const ProjectThumbnail = (props: ProjectThumbnailProps) => {
-
-    const isBigScreen = useMediaQuery({ query: '(min-width: 768px)' })
+const ProjectThumbnail = (props: React.PropsWithChildren<ProjectThumbnailProps>) => {
 
     return <>
         <div id="left" className="md:border-r border-b">
@@ -35,20 +35,18 @@ const ProjectThumbnail = (props: ProjectThumbnailProps) => {
                 </div>
                 <div className="px-[20px] py-[25px] flex flex-col gap-10">
                     <div className="max-w-[400px]">
-                    {props.description}
+                        {props.description}
                     </div>
-                    <LinkButton
-                        label={"More >>"}
-                        to={props.fullInfoUrl}
-                    />
+                    <div className="flex flex-col gap-[20px]">
+                        {props.children}
+                    </div>
                 </div>
             </div>
         </div>
 
         <div id="right" className="border-b">
-            <div className="px-[20px] py-[25px]">
+            <div className="px-[20px] py-[25px] flex justify-center">
                 <img
-                    className="wombo"
                     src={props.image.src}
                     alt={props.image.alt}
                 />

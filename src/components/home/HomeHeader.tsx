@@ -12,13 +12,21 @@ const HomeHeader = () => {
     }, []);
 
     const handleScroll = () => {
-        let proj = document.getElementById("projects");
-        let projects = proj?.getBoundingClientRect();
+
 
         let ab = document.getElementById("about");
         let about = ab?.getBoundingClientRect();
 
-        if (projects && projects.top < 95) {
+        let proj = document.getElementById("projects");
+        let projects = proj?.getBoundingClientRect();
+
+        let f = document.getElementById("fun");
+        let fun = f?.getBoundingClientRect();
+
+        if (fun && fun.top < 95) {
+            setBorderColor("header-red")
+        }
+        else if (projects && projects.top < 95) {
             setBorderColor("header-blue")
         }
         else if (about && about.top < 95) {
@@ -43,6 +51,11 @@ const HomeHeader = () => {
                 label="Projects"
                 sectionID="projects"
                 color="blue"
+            />
+            <ScrollyButton
+                label="Fun"
+                sectionID="fun"
+                color="red"
             />
         </Header>
 

@@ -4,7 +4,7 @@ import Header from "../Header"
 import { PropsWithChildren } from "react"
 import x from "../../images/x.png"
 import KeyInfoSection from "./KeyInfoSection"
-import LinkButton from "../home/LinkButton"
+import GatsbyLinkButton from "../GatsbyLinkButton"
 
 export interface ProjectTemplateProps {
     title: string,
@@ -20,7 +20,7 @@ const ProjectTemplate = (props: PropsWithChildren<ProjectTemplateProps>) => (
             title={props.title}
             borderColor="header-blue"
         >
-            <LinkButton
+            <GatsbyLinkButton
                 label={"Close"}
                 to={"/"}
             />

@@ -4,6 +4,7 @@ import ProjectThumbnail from "./ProjectThumbnail"
 import a360_combo from "../../images/a360/a360_combo.png"
 
 import intus_combo from "../../images/intus/intus_combo.png"
+import GatsbyLinkButton from "../GatsbyLinkButton"
 
 
 const projectProps = [
@@ -37,7 +38,12 @@ const Projects = () => (
             <ProjectThumbnail
                 key={props.title}
                 {...props}
-            />
+            >
+                <GatsbyLinkButton
+                    label={"More >>"}
+                    to={props.fullInfoUrl}
+                />
+            </ProjectThumbnail>
         )}
     </div>
 )

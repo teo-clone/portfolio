@@ -11,6 +11,7 @@ module.exports = {
         'black': '#393939',
         'blue': '#3B8BEB',
         'green': '#5CD595',
+        'red': '#EF5C5C',
       },
       screens: {
         'xsm': '395px',

@@ -45,7 +45,6 @@ const About = () => {
                             {"When I am not working I am"}
                             <HoverGifinator gifSrc={amigos} label={"seeing friends"} updateGif={setGif} />,
                             <HoverGifinator gifSrc={biking} label={"biking"} updateGif={setGif} />,
-                            <HoverGifinator gifSrc={playlists} label={"making playlist covers"} updateGif={setGif} />,
                             <HoverGifinator gifSrc={""} label={"Y"} updateGif={setGif} />,
                             <HoverGifinator gifSrc={""} label={"Z"} updateGif={setGif} />
                         </div>

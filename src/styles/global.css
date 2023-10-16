@@ -26,16 +26,22 @@ video {
     animation: slide 4s linear infinite;
 }
 
+.header-red {
+    background: repeating-linear-gradient(10deg, rgb(244, 234, 208), #EF5C5C, rgb(244, 234, 208));
+    background-size: 200% 200%;
+}
 .header-blue {
     background: repeating-linear-gradient(10deg, rgb(244, 234, 208), #3B8BEB, rgb(244, 234, 208));
     background-size: 200% 200%;
 }
-
 .header-green {
     background: repeating-linear-gradient(10deg, rgb(244, 234, 208), #5CD595, rgb(244, 234, 208));
     background-size: 200% 200%;
 }
 
+.link-button:hover img {
+    filter: brightness(0) invert(1);
+}
 @keyframes slide {
     0% {
         background-position: 0% -0%;
@@ -63,5 +69,11 @@ video {
     -webkit-text-fill-color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #5CD595;
+}
+.red-scrolly-btn:hover {
+    color: #EF5C5C;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #EF5C5C;
 }
 }

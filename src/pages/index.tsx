@@ -3,6 +3,7 @@ import HomeHeader from "../components/home/HomeHeader"
 import Projects from "../components/home/Projects"
 import About from "../components/home/About"
 import Footer from "../components/home/Footer"
+import Fun from "../components/home/Fun"
 
 const HomePage = () => (
   <div>
@@ -12,6 +13,7 @@ const HomePage = () => (
     <div className="flex flex-col gap-[80px] py-[40px]">
       <About />
       <Projects />
+      <Fun />
     </div>
 
     <Footer />
