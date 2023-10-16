@@ -33,16 +33,6 @@ const funProjectProps = [
         ]
     },
     {
-        title: "COLLAGE",
-        timeline: "",
-        description: "Having some fun making collages on photoshop",
-        image: {
-            id: "collage",
-            src: collage,
-            alt: "Example image of a collage I've made"
-        }
-    },
-    {
         title: "DIY",
         timeline: "",
         description: "I want to learn how to make more things with my hands. I am currently working on a set of bedside shelves.",
@@ -77,6 +67,16 @@ const funProjectProps = [
                 to: "https://www.youtube.com/watch?v=gvYQw9-bzpQ"
             },
         ]
+    },
+    {
+        title: "COLLAGE",
+        timeline: "",
+        description: "Having some fun making collages on photoshop",
+        image: {
+            id: "collage",
+            src: collage,
+            alt: "Example image of a collage I've made"
+        }
     },
 ]
 
