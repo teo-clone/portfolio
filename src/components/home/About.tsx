@@ -2,7 +2,7 @@ import * as React from "react"
 import me from "../../images/me.jpeg"
 import biking from "../../images/biking.gif"
 import amigos from "../../images/amigos.gif"
-import playlists from "../../images/playlists.gif"
+import onion_chop from "../../images/onion_chop.gif"
 
 import ToolboxCodeSection from "./toolbox/ToolboxCodeSection"
 import ToolboxDesignSection from "./toolbox/ToolboxDesignSection"
@@ -22,7 +22,7 @@ const About = () => {
                 </div>
 
                 <div id="right" className="md:border-none border-t py-[30px] px-[20px]">
-                    <div className="flex flex-col gap-[10px] max-w-[450px]">
+                    <div className="flex flex-col gap-[10px] max-w-[455px]">
                         <div>
                             {"Γεια!"}
                         </div>
@@ -43,10 +43,9 @@ const About = () => {
                         </div>
                         <div className="flex flex-wrap gap-[5px]">
                             {"When I am not working I am"}
-                            <HoverGifinator gifSrc={amigos} label={"seeing friends"} updateGif={setGif} />,
-                            <HoverGifinator gifSrc={biking} label={"biking"} updateGif={setGif} />,
-                            <HoverGifinator gifSrc={""} label={"Y"} updateGif={setGif} />,
-                            <HoverGifinator gifSrc={""} label={"Z"} updateGif={setGif} />
+                            <HoverGifinator gifSrc={amigos} label={"seeing friends"} updateGif={setGif} />
+                            <HoverGifinator gifSrc={biking} label={"biking"} updateGif={setGif} />
+                            <HoverGifinator gifSrc={onion_chop} label={"cooking"} updateGif={setGif} lastOne />
                         </div>
                         {gif && (
                             <img
