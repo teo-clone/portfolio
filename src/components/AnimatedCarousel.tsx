@@ -1,5 +1,4 @@
 import * as React from "react"
-import '../styles/carousel.css' // TODO: animate them ... 
 
 interface AnimatedCarouselProps {
     label?: string,

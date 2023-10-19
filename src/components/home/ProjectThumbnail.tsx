@@ -37,16 +37,17 @@ const ProjectThumbnail = (props: React.PropsWithChildren<ProjectThumbnailProps>)
                     <div className="max-w-[400px]">
                         {props.description}
                     </div>
-                    <div className="flex flex-col gap-[20px]">
+                    {props.children && <div className="flex flex-col gap-[20px]">
                         {props.children}
-                    </div>
+                    </div>}
                 </div>
             </div>
         </div>
 
         <div id="right" className="border-b">
-            <div className="px-[20px] py-[25px] flex justify-center">
+            <div className="px-[20px] py-[25px] flex justify-center items-center">
                 <img
+                    className="flex max-h-[700px] h-full"
                     src={props.image.src}
                     alt={props.image.alt}
                 />

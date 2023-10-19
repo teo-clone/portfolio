@@ -3,8 +3,9 @@ import * as React from "react"
 import greek_visions from "../../images/fun/greek_visions.png"
 import collage from "../../images/fun/collage/lizard_collage.png"
 import la_luna from "../../images/fun/la_luna.png"
-import cover from "../../images/playlists.gif"
+import cover from "../../images/fun/playlists.gif"
 import shelves from "../../images/fun/shelves.jpeg"
+import collages from "../../images/fun/collages.gif"
 
 
 import ExternalLinkButton from "../ExternalLinkButton"
@@ -74,7 +75,7 @@ const funProjectProps = [
         description: "Having some fun making collages on photoshop",
         image: {
             id: "collage",
-            src: collage,
+            src: collages,
             alt: "Example image of a collage I've made"
         }
     },
