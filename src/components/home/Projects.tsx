@@ -11,7 +11,7 @@ const projectProps = [
     {
         fullInfoUrl: "/a360",
         title: "ACTIVE>360",
-        timeline: "2020 - PRESENT",
+        timeline: "2020 - 2023",
         description: "Working full-time as a (mostly) frontend developer and UI designer on a real time event processing application.",
         image: {
             id: "a360_wombo_combo",
