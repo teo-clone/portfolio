@@ -30,13 +30,14 @@ const About = () => {
 
             <div className="grid md:grid-cols-2 grid-cols-1">
                 <div id="left" className="p-[10px] w-full md:border-r">
-                    <video
-                        ref={teoVideo}
-                        src={teo}
-                        muted
-                        onMouseEnter={handlePlay}
-                    // className="max-w-xl w-fit"
-                    />
+                    <div className="max-w-lg w-fit">
+                        <video
+                            ref={teoVideo}
+                            src={teo}
+                            muted
+                            onMouseEnter={handlePlay}
+                        />
+                    </div>
                 </div>
 
                 <div id="right" className="md:border-none border-t py-[30px] px-[20px]">
