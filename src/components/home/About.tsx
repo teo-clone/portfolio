@@ -1,5 +1,6 @@
 import * as React from "react"
 import me from "../../images/me.jpeg"
+import teo from "../../images/me.mp4"
 import biking from "../../images/biking.gif"
 import amigos from "../../images/amigos.gif"
 import onion_chop from "../../images/onion_chop.gif"
@@ -8,8 +9,19 @@ import ToolboxCodeSection from "./toolbox/ToolboxCodeSection"
 import ToolboxDesignSection from "./toolbox/ToolboxDesignSection"
 import ToolboxLanguageSection from "./toolbox/ToolboxLanguageSection"
 import HoverGifinator from "./HoverGifinator"
+import { useRef, useState } from "react"
 
 const About = () => {
+
+    const teoVideo = useRef<HTMLVideoElement | null>(null);
+    const [hasPlayed, setHasPlayed] = useState(false);
+
+    const handlePlay = () => {
+        if (teoVideo.current && !hasPlayed) {
+            teoVideo.current.play();
+            setHasPlayed(true);
+        }
+    };
 
     const [gif, setGif] = React.useState<string | undefined>(undefined);
 
@@ -18,7 +30,13 @@ const About = () => {
 
             <div className="grid md:grid-cols-2 grid-cols-1">
                 <div id="left" className="p-[10px] w-full md:border-r">
-                    <img src={me} />
+                    <video
+                        ref={teoVideo}
+                        src={teo}
+                        muted
+                        onMouseEnter={handlePlay}
+                    // className="max-w-xl w-fit"
+                    />
                 </div>
 
                 <div id="right" className="md:border-none border-t py-[30px] px-[20px]">

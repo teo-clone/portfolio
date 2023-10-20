@@ -88,8 +88,8 @@ const Fun = () => (
                 key={props.title}
                 {...props}
             >
-                {props.externalLinks && props.externalLinks.map((link) =>
-                    <ExternalLinkButton label={link.label} to={link.to} />
+                {props.externalLinks && props.externalLinks.map((link, i) =>
+                    <ExternalLinkButton key={i} label={link.label} to={link.to} />
                 )}
             </ProjectThumbnail>
         )}
