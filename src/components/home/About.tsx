@@ -37,6 +37,7 @@ const About = () => {
                             src={teo}
                             muted
                             onMouseEnter={handlePlay}
+                            playsInline
                         />
                     </div>
                 </div>
