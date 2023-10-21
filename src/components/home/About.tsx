@@ -32,6 +32,7 @@ const About = () => {
                 <div id="left" className="p-[10px] md:border-r">
                     <div className="max-w-lg w-fit">
                         <video
+                            preload="metadata"
                             className="bg-white"
                             ref={teoVideo}
                             src={teo}
