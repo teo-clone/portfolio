@@ -44,21 +44,23 @@ const HomeHeader = () => {
             title={isBigScreen ? "Teo Tsivranidis" : "Teo T"}
             borderColor={borderColor}
         >
-            <ScrollyButton
-                label="About"
-                sectionID="about"
-                color="green"
-            />
-            <ScrollyButton
-                label="Projects"
-                sectionID="projects"
-                color="blue"
-            />
-            <ScrollyButton
-                label="Fun"
-                sectionID="fun"
-                color="red"
-            />
+            <div className="flex justify-end gap-[20px]">
+                <ScrollyButton
+                    label="About"
+                    sectionID="about"
+                    color="green"
+                />
+                <ScrollyButton
+                    label="Projects"
+                    sectionID="projects"
+                    color="blue"
+                />
+                <ScrollyButton
+                    label="Fun"
+                    sectionID="fun"
+                    color="red"
+                />
+            </div>
         </Header>
 
     </>

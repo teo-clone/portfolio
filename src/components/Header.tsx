@@ -10,7 +10,7 @@ export interface HeaderProps {
 
 const Header = ({ title, borderColor, children }: PropsWithChildren<HeaderProps>) => {
 
-    const padding = ["px-[20px]", "py-[30px]"]
+    const padding = ["px-[20px]", "py-[20px]"]
     const sticky = ["sticky", "top-0", "bg-white", "bg-opacity-50", "z-50"]
     const spacing = ["flex", "justify-between", "items-center"]
     const border = ["border-b"]
@@ -30,9 +30,7 @@ const Header = ({ title, borderColor, children }: PropsWithChildren<HeaderProps>
                 color="black"
             />
 
-            <div className="flex justify-end gap-[20px]">
-                {children}
-            </div>
+            {children}
 
         </div>
         <div className={`header-border ${borderColor}`}></div>

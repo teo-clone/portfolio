@@ -16,7 +16,7 @@ const AnimatedCarousel = ({ label, imgs }: AnimatedCarouselProps) => {
 
                 <div className="flex items-center gap-[25px] max-w-[1200px] w-full overflow-scroll">
                     {imgs.map((img, i) =>
-                        <img src={img} className="max-w-xs rounded-md" />
+                        <img src={img} className="max-w-xs w-full rounded-md" />
                     )}
                 </div>
             </div>
