@@ -10,6 +10,7 @@ const dateTime = new Date().toLocaleString(undefined, {
     minute: '2-digit',
     second: '2-digit',
     hour12: true,
+    timeZoneName: 'short'
 });
 
 // Path to the file that will hold the date time
