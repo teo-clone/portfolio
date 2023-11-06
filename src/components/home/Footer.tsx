@@ -31,7 +31,7 @@ const Footer = () => {
     </div>
 
         <div>
-            Built using Gatsby React.js / Tailwindcss. Hosted on Netlify.
+            Built using Gatsby React.js and Tailwindcss. Hosted on Netlify.
         </div>
 
         <div>
