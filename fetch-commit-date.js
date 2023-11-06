@@ -18,5 +18,5 @@ const filePath = path.join(__dirname, 'src', 'commitDate.ts');
 // Write the date time to the file
 fs.writeFileSync(
     filePath,
-    `// This file is auto-generated on pre-commit hook\nexport const commitDateTime = '${dateTime}';\ngit add .`
+    `// This file is auto-generated on pre-commit hook\nexport const commitDateTime = '${dateTime}';`
 );
