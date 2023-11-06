@@ -41,7 +41,7 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "prepare": "husky install",
-    "fetch-commit-date": "node fetch-commit-date.js"
+    "fetch-commit-date": "node fetch-commit-date.js && ./git-add-commit-date.sh"
   },
   "repository": {
     "type": "git",
