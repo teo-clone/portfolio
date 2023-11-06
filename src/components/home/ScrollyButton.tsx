@@ -13,7 +13,7 @@ const ScrollyButton = (props: ScrollyButtonProps) => {
             return;
         }
 
-        var headerOffset = 93
+        var headerOffset = 73
         var elementPosition = document.getElementById(props.sectionID)?.getBoundingClientRect().top ?? 0
         var offsetPosition = elementPosition + window.scrollY - headerOffset
 
