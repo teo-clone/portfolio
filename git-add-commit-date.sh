@@ -1,2 +1,2 @@
 #!/bin/bash
-git add src/commitDate.js
+git add src/commitDate.ts
