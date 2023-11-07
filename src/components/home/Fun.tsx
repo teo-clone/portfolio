@@ -4,7 +4,7 @@ import greek_visions from "../../images/fun/greek_visions.png"
 import collage from "../../images/fun/collage/lizard_collage.png"
 import la_luna from "../../images/fun/la_luna.png"
 import cover from "../../images/fun/playlists.gif"
-import shelves from "../../images/fun/shelves.jpeg"
+import shelves from "../../images/fun/shelves.gif"
 import collages from "../../images/fun/collages.gif"
 
 
