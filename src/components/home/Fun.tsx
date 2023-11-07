@@ -36,7 +36,7 @@ const funProjectProps = [
     {
         title: "DIY",
         timeline: "",
-        description: "I want to learn how to make more things with my hands. I am currently working on a set of bedside shelves.",
+        description: "I want to learn how to make more things with my hands. I recently made set of bedside shelves. I am now working on re-upholstering my director's chair.",
         image: {
             id: "shelves",
             src: shelves,
