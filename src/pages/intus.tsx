@@ -1,5 +1,6 @@
 import * as React from "react"
 import intus_mock from "../images/intus/intus_mock_v1.mp4"
+import team from "../images/intus/intus_team.jpg"
 import home_v1 from "../images/intus/home_evolution/v1.png"
 import home_v2 from "../images/intus/home_evolution/v2.png"
 import home_v3 from "../images/intus/home_evolution/v3.png"
@@ -131,8 +132,24 @@ const Intus = () => (
                 <i>Boston Globe: These hot R.I. startups are getting lots of buzz, October 2019</i>
             </a>
             <a className="underline text-blue" href="https://masschallenge.org/news/masschallenge-awards-over-1m-cash-prizes-top-boston-rhode-island-startups/">
-                <i> MassChallenge Awards over $1M in Cash Prizes to Top Boston and Rhode Island Startups, October 2019 </i>
+                <i> MassChallenge Awards over $1M in Cash Prizes to Top Boston and Rhode Island Startups, October 2019</i>
             </a>
+
+            <a className="underline text-blue" href="https://entrepreneurship.brown.edu/the-brown-venture-prize/2019-finalists/">
+                <i>2019 Brown Venture Prize Finalists, Judges, and Event Press!</i>
+            </a>
+
+            <div className="flex justify-center">
+                <div className={"bg-slate-50 p-5 rounded-md flex flex-col gap-[25px]"}>
+                    <div className={"text-sm text-slate-400 flex flex-col gap-[10px]"}>
+                        <div>Intus Care when we presented at Brown University Venture Prize in 2019.</div>
+                        <div>From left to right: Me, Samuel Prado, Alexis Devine, Robbie Felton, Evan Jackson.</div>
+                        <div>Alexis Devine (Program Manager at Lifespan) offered invaluable market research help to.</div>
+                    </div>
+                    <img className="max-w-[700px] w-full" src={team} alt={"alt"} />
+                </div>
+            </div>
+
         </DetailsSection>
 
     </ProjectTemplate>

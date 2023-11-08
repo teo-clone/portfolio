@@ -10,7 +10,7 @@ const AnimatedCarousel = ({ label, imgs }: AnimatedCarouselProps) => {
         <div className="flex justify-center max-w-[1300px] w-full ">
             <div className="flex flex-col items-center bg-slate-50 p-5 rounded-md gap-[25px] w-full">
                 {label &&
-                    <div className={"text-sm font-medium text-slate-400"}>
+                    <div className={"text-sm text-slate-400"}>
                         {label}
                     </div>}
 
