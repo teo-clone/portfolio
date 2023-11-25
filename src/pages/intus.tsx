@@ -36,7 +36,7 @@ const Intus = () => (
         title={"INTUS CARE"}
         role={"Co-founder, Software Developer and UI Designer"}
         toolkit={"Product Strategy, Mobile Development, Product Design"}
-        team={"Evan Jackson, Robbie Felton, Samuel Prado"}
+        team={"Evan Jackson, Robbie Felton, Samuel Prado, Me"}
         briefParagraphs={["Intus Care is a health care startup whose mission is to connect the elderly and disabled in need of care with home care providers, through the use of a mobile application."]}
     >
         <DetailsSection
@@ -61,7 +61,7 @@ const Intus = () => (
                 "figma",
                 "swift",
                 "node.js",
-                "oop" // TODO: make this object oriented programming
+                "oop"
             ]}
         >
 
@@ -108,9 +108,9 @@ const Intus = () => (
             tags={[]}
         >
 
-            <p>{"I would say the biggest lesson I learned from the experience was that it was too early to begin developing the application while the product was not fully defined just yet. "}</p>
-            <p>{"As we spoke to more people in the industry, we got differing opinions of what the exact scope of the application should be. We also found that the public health industry is heavily regulated, which could create issues for us with our plan at the time."}</p>
-            <p>{"I now know it would have been more worthwhile to use a Figma prototype for the purpose of demos and market research, until the product reached a more stable state."}</p>
+            <p>{"The biggest lesson I learned from the experience was that it was too early to begin developing the application while the product was not fully defined just yet."}</p>
+            <p>{"As we continued our market research, we discovered subtle roadblocks. Speaking to more people in the industry, we got differing opinions of what the exact scope of the application should be. We also found that the public health industry is heavily regulated, which could create issues for us with our plan at the time."}</p>
+            <p>{"It would have been more worthwhile to use a Figma prototype for the purpose of demos and market research, until the product reached a more stable state."}</p>
         </DetailsSection>
 
         <DetailsSection
@@ -118,9 +118,8 @@ const Intus = () => (
             tags={[]}
         >
 
-            <p>{"An important feature to add would be if we developed a patient / caregiver matching algorithm."}</p>
-            <p>{"This could be based on a number of factors such as: location proximity, languages spoken, prior experience that a caregiver has providing certain types of assistance."}</p>
-            <p>{"We could also introduce hobbies / interests (e.g. reading, sports, film etc) on user profiles to match those and allow users to have a better idea of the personality of their patient / caregiver."}</p>
+            <p>{"An important feature to add would be if we developed a patient / caregiver matching algorithm, in order to effectively recommend good caregivers to the application user. The algorithm would likely be based on a number of factors such as: location proximity, languages spoken, prior experience that a caregiver has providing certain types of assistance."}</p>
+            <p>{"We could also introduce hobbies / interests (e.g. reading, sports, film etc) on user profiles to match those and allow users to have a better idea of the personality of their patient / caregiver, before scheduling an initial visit."}</p>
 
         </DetailsSection>
 

@@ -43,7 +43,7 @@ const A360 = () => (
             <div className="bg-slate-50 p-5 rounded-md my-[30px]">
                 <video src={event_create} controls autoPlay loop muted />
             </div>
-            <p>{"The process of creating an Event is divided into sections that the user can focus on individually. An event is most importantly composed of a name, and the fields (the info) that is attached to each incoming instance of the event. In the Weather Forecast event example Forecast Date, Temperature and Snowfall Info seem like appropriate fields we want to know about."}</p>
+            <p>{"The process of creating an Event is divided into sections that the user can focus on individually. An event is most importantly composed of a name, and the fields (the info) that is attached to each incoming instance of the event. In the example above, Forecast Date, Temperature and Snowfall Info seem like appropriate fields we want to know about every time a new Weather Forecast event comes into the system."}</p>
             <p>{"I ended up creating several other object pages, using a lot of the same infrastructure. To make sure everything works well, I used cypress to build tests for each page."}</p>
 
         </DetailsSection>
