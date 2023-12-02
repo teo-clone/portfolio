@@ -25,7 +25,7 @@ const funProjectProps = [
         externalLinks: [
             {
                 label: "Figma Prototype",
-                to: "https://www.figma.com/proto/DDmwBH9rQIG9p717VWtwen/greek_visions?page-id=77%3A223&node-id=77-310&starting-point-node-id=77%3A310&mode=design&t=AuQxp67DAswhQyn5-1"
+                to: "https://www.figma.com/proto/DDmwBH9rQIG9p717VWtwen/greek_visions?type=design&node-id=77-223&scaling=min-zoom&page-id=77%3A223&starting-point-node-id=77%3A310"
             },
             {
                 label: "@greekvisions",

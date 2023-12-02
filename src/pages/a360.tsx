@@ -22,8 +22,7 @@ import PropertyExample from "../components/a360/PropertyExample"
 const A360 = () => (
     <ProjectTemplate
         title={"ACTIVE>360"}
-        role={"Software Developer and UI Designer"}
-        toolkit={"Web Application Development, Feature Design"}
+        role={"Full-stack Web Development, UI Design"}
         team={"Team of 24 people, 4 of which were frontend developers"}
         briefParagraphs={[
             "Active>360 is a real-time event processing platform. It allows businesses to create a profile of their customer interactions.",
@@ -68,7 +67,7 @@ const A360 = () => (
 
             <p>{"I built several other React components on top of BaseProperty to abstract and share logic such as styling, validity, optional/required, readonly/edit, dependent inputs, loading dropdown items based on a query."}</p>
 
-            <div className="grid gap-[30px] grid-cols-1 lg:grid-cols-2 my-[30px] ">
+            <div className="grid gap-[30px] grid-cols-1 lg:grid-cols-2 my-[30px]">
                 <PropertyExample
                     title="<TextProperty />"
                     img={text}

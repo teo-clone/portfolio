@@ -31,17 +31,17 @@ const projectProps = [
             alt: "Image with examples of home, care request details, and new care request screens"
         }
     },
-    // {
-    //     fullInfoUrl: "/statton",
-    //     title: "STATTON",
-    //     timeline: "2023 - PRESENT",
-    //     description: "Full-stack developer and UI designer for a data visualization web application.",
-    //     image: {
-    //         id: "statton",
-    //         src: statton,
-    //         alt: "Image with examples of response analytics screen."
-    //     }
-    // },
+    {
+        fullInfoUrl: "/statton",
+        title: "STATTON",
+        timeline: "2023 - PRESENT",
+        description: "Full-stack developer and UI designer for a data visualization web application.",
+        image: {
+            id: "statton",
+            src: statton,
+            alt: "Image with examples of response analytics screen."
+        }
+    },
 ]
 
 const Projects = () => (

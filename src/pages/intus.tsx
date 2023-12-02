@@ -34,8 +34,7 @@ import AnimatedCarousel from "../components/AnimatedCarousel"
 const Intus = () => (
     <ProjectTemplate
         title={"INTUS CARE"}
-        role={"Co-founder, Software Developer and UI Designer"}
-        toolkit={"Product Strategy, Mobile Development, Product Design"}
+        role={"Co-founder, Full-stack Mobile Development, UI Design"}
         team={"Evan Jackson, Robbie Felton, Samuel Prado, Me"}
         briefParagraphs={["Intus Care is a health care startup whose mission is to connect the elderly and disabled in need of care with home care providers, through the use of a mobile application."]}
     >

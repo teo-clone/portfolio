@@ -9,7 +9,6 @@ import GatsbyLinkButton from "../GatsbyLinkButton"
 export interface ProjectTemplateProps {
     title: string,
     role: string,
-    toolkit: string,
     team: string,
     briefParagraphs: string[]
 }
@@ -34,10 +33,6 @@ const ProjectTemplate = (props: PropsWithChildren<ProjectTemplateProps>) => (
                         texts={[props.role]}
                     />
                     <KeyInfoSection
-                        title={"TOOLKIT"}
-                        texts={[props.toolkit]}
-                    />
-                    <KeyInfoSection
                         title={"TEAM"}
                         texts={[props.team]}
                     />
@@ -45,7 +40,7 @@ const ProjectTemplate = (props: PropsWithChildren<ProjectTemplateProps>) => (
             </div>
             <div id="right" className="border-b px-[20px] py-[30px]">
                 <KeyInfoSection
-                        title={"BRIEF"}
+                    title={"BRIEF"}
                     texts={props.briefParagraphs}
                 />
             </div>
