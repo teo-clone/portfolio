@@ -22,7 +22,7 @@ import PropertyExample from "../components/a360/PropertyExample"
 const A360 = () => (
     <ProjectTemplate
         title={"ACTIVE>360"}
-        role={"Full-stack Development, UI Design"}
+        role={"Full-stack Web Application Development, UI Design"}
         team={"Team of 24 people, 4 of whom I worked alongside on developing the web application"}
         briefParagraphs={[
             "Active>360 is a real-time event processing platform. It allows businesses to create a profile of their customer interactions.",
