@@ -23,7 +23,7 @@ const A360 = () => (
     <ProjectTemplate
         title={"ACTIVE>360"}
         role={"Full-stack Development, UI Design"}
-        team={"Team of 24 people, 4 of which were frontend developers"}
+        team={"Team of 24 people, 4 of whom I worked alongside on developing the web application"}
         briefParagraphs={[
             "Active>360 is a real-time event processing platform. It allows businesses to create a profile of their customer interactions.",
             "The user creates events they want to observe (e.g. SMS Sent), calculations on those events (e.g. Weekly International SMS Messages), and notifications they want to send to their customers (e.g. International SMS Offer)."
