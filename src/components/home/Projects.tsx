@@ -10,18 +10,18 @@ import ExternalLinkButton from "../ExternalLinkButton"
 
 
 const projectProps = [
-    {
-        fullInfoUrl: "/statton",
-        title: "STATTON",
-        timeline: "2023",
-        description: "Full-stack developer and UI designer for a data visualization web application.",
-        liveLink: "https://statton.netlify.app",
-        image: {
-            id: "statton",
-            src: statton,
-            alt: "Image with examples of response analytics screen."
-        }
-    },
+    // {
+    //     fullInfoUrl: "/statton",
+    //     title: "STATTON",
+    //     timeline: "2023",
+    //     description: "Full-stack developer and UI designer for a data visualization web application.",
+    //     liveLink: "https://statton.netlify.app",
+    //     image: {
+    //         id: "statton",
+    //         src: statton,
+    //         alt: "Image with examples of response analytics screen."
+    //     }
+    // },
     {
         fullInfoUrl: "/a360",
         title: "ACTIVE>360",
