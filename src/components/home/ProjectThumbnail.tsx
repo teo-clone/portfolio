@@ -17,7 +17,8 @@ export interface ProjectThumbnailProps {
     title: string,
     timeline: string,
     description: string,
-    image: ImageProps
+    image: ImageProps,
+    liveLink?: string
 }
 
 const ProjectThumbnail = (props: React.PropsWithChildren<ProjectThumbnailProps>) => {

@@ -16,6 +16,7 @@ import statton_3 from "../images/statton/character/statton_3.png"
 import statton_4 from "../images/statton/character/statton_4.png"
 import statton_5 from "../images/statton/character/statton_5.png"
 import statton_6 from "../images/statton/character/statton_6.png"
+import UnderConstruction from "../components/UnderConstruction"
 
 const Intus = () => (
     <ProjectTemplate
@@ -25,8 +26,8 @@ const Intus = () => (
         briefParagraphs={[
             "It is fascinating to compare our opinion to the global opinion.",
             "Statton is a website that poses its users with a daily multiple choice question and allows them to view how the rest of the world responded.",
-            "<Add a live link here>"
         ]}
+        liveLink={"https://statton.netlify.app"}
     >
         <DetailsSection
             title={"THE IDEA"}
@@ -121,10 +122,23 @@ const Intus = () => (
 
         <DetailsSection
             title={"DEVELOPMENT"}
-            tags={["sveltekit", "postgres", "prisma"]}
+            tags={["sveltekit", "mysql", "prisma"]}
         >
-            <p>I used this project as an opportunity to learn some new web application framework, so I chose to develop it using Sveltekit.</p>
-            <p>Expand on database table decisions, some components / pages ?.</p>
+            <p>For data purposes, I used Prisma as an ORM to make interacting with my MySQL database easier. I hosted a remote MySQL database using PlanetScale for the published version of the site. I also had a local MySQL database for development purposes.</p>
+            <p>[TODO: db schema description]</p>
+
+            <p>I used this project as an opportunity to learn a new web application framework, so I chose to use Sveltekit.</p>
+            <p>On the question page I used an html form block to get boilerplate logic associated with submitting a response handled automatically. When the user hits the submit button, I add a row to the Response table to track the newly submitted response.</p>
+            <p>[TODO: screenshot of how simple form logic is]</p>
+
+            <p>I also add a cookie to the user's browser which has information about which response the user selected. This cookie allows me to know whether a certain user (at least on a certain browser session) has already responded to the question of the day. It allows me to do this without storing any information about the user, ensuring user privacy. By checking the existence of this cookie, I can keep the user on the valid pages of the app, ensuring they do not respond multiple times or view the response page before responding.</p>
+            <p>I also store the date at which the current cookie should expire. When this date is passed an the user visits the site again, I delete existing cookies, allowing the user to answer the new question.</p>
+            <p>[TODO: screenshot of cookie]</p>
+
+            <p>[TODO: how do I query the right question?]</p>
+
+            <p>[TODO: some info on result page]</p>
+
         </DetailsSection>
 
         <DetailsSection

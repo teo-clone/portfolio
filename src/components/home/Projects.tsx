@@ -6,6 +6,7 @@ import intus_combo from "../../images/intus/intus_combo.png"
 import statton from "../../images/statton/statton.png"
 
 import GatsbyLinkButton from "../GatsbyLinkButton"
+import ExternalLinkButton from "../ExternalLinkButton"
 
 
 const projectProps = [
@@ -14,6 +15,7 @@ const projectProps = [
     //     title: "STATTON",
     //     timeline: "2023",
     //     description: "Full-stack developer and UI designer for a data visualization web application.",
+    //     liveLink: "https://statton.netlify.app",
     //     image: {
     //         id: "statton",
     //         src: statton,
@@ -25,6 +27,7 @@ const projectProps = [
         title: "ACTIVE>360",
         timeline: "2020 - 2023",
         description: "Full-stack developer and UI designer on a real time event processing application.",
+        liveLink: undefined,
         image: {
             id: "a360_wombo_combo",
             src: a360_combo,
@@ -55,6 +58,9 @@ const Projects = () => (
                     label={"More >>"}
                     to={props.fullInfoUrl}
                 />
+                {props.liveLink &&
+                    <ExternalLinkButton label={"Live Link"} to={props.liveLink} />
+                }
             </ProjectThumbnail>
         )}
     </div>

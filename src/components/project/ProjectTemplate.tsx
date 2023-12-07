@@ -10,6 +10,7 @@ export interface ProjectTemplateProps {
     title: string,
     role: string,
     team: string,
+    liveLink?: string,
     briefParagraphs: string[]
 }
 
@@ -42,6 +43,7 @@ const ProjectTemplate = (props: PropsWithChildren<ProjectTemplateProps>) => (
                 <KeyInfoSection
                     title={"BRIEF"}
                     texts={props.briefParagraphs}
+                    liveLink={props.liveLink}
                 />
             </div>
         </div>
