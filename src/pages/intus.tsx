@@ -77,7 +77,7 @@ const Intus = () => (
                     imgs={[service_v0, service_v1, service_v2, service_v3]}
                 />
                 <AnimatedCarousel
-                    label="Evolution of the availabily selection page"
+                    label="Evolution of the availability selection page"
                     imgs={[availability_v1, availability_v21, availability_v22, availability_v31, availability_v32]}
                 />
                 <AnimatedCarousel
