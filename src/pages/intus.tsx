@@ -5,6 +5,7 @@ import home_v1 from "../images/intus/home_evolution/v1.png"
 import home_v2 from "../images/intus/home_evolution/v2.png"
 import home_v3 from "../images/intus/home_evolution/v3.png"
 import home_v4 from "../images/intus/home_evolution/v4.png"
+import service_v0 from "../images/intus/services/v0.png"
 import service_v1 from "../images/intus/services/v1.png"
 import service_v2 from "../images/intus/services/v2.png"
 import service_v3 from "../images/intus/services/v3.png"
@@ -73,7 +74,7 @@ const Intus = () => (
                 />
                 <AnimatedCarousel
                     label="Evolution of the service selection page"
-                    imgs={[service_v1, service_v2, service_v3]}
+                    imgs={[service_v0, service_v1, service_v2, service_v3]}
                 />
                 <AnimatedCarousel
                     label="Evolution of the availabily selection page"
