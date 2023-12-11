@@ -37,13 +37,13 @@ const A360 = () => (
                 "cypress"
             ]}
         >
-            <p>{"One of the pages I built on Active>360 is the Event creation page. An Event refers to an input that the business wants to observe to potentially make calculations on. "}</p>
-            <p>{"In the example below, we can imagine that a Ski Resort may want to send their customers reminders to buy a ski pass when certain weather conditions are met. A business user would then create an Event that comes into the system once a day, a Weather Forecast."}</p>
+            <p>{"One of the pages I built on Active>360 is the Event creation page. An Event refers to an input that the business wants to observe and make calculations on."}</p>
+            <p>{"As an example, a Ski Resort may want to send their customers reminders to buy a ski pass when certain weather conditions are met. The Ski Resort employee would use Active>360 to define the record format of the Event that comes into the system daily, a Weather Forecast."}</p>
             <div className="bg-slate-50 p-5 rounded-md my-[30px]">
                 <video src={event_create} controls autoPlay loop muted />
             </div>
-            <p>{"The process of creating an Event is divided into sections that the user can focus on individually. An event is most importantly composed of a name, and the fields that are attached to each incoming instance of the event. In the example above, Forecast Date, Temperature and Snowfall Info seem like appropriate fields we want to know about every time a new Weather Forecast event comes into the system."}</p>
-            <p>{"I ended up creating several other object pages using a lot of the same infrastructure. To make sure pages worked as expected, I used cypress to build tests that tested visiting a page in readonly mode, editing a page, and saving a page with new information."}</p>
+            <p>{"The process of creating an Event is divided into sections that the user can focus on individually. An event is most importantly composed of a name, and the fields that are attached to each incoming instance of the event. In the example below, Forecast Date, Temperature and Snowfall Info seem like appropriate fields we want to know about every time a new Weather Forecast event comes into the system."}</p>
+            <p>{"I ended up creating several other object pages re-using a lot of the same infrastructure. To make sure pages worked as expected, I used cypress to build tests around visiting a page in readonly mode, editing a page, and saving a page with new information."}</p>
 
         </DetailsSection>
         <DetailsSection
@@ -54,7 +54,7 @@ const A360 = () => (
                 "oop" // TODO: make this object oriented programming
             ]}
         >
-            <p>{"The application makes extensive use of input forms. I took it upon myself to create input component infrastructure in a generic, object oriented manner."}</p>
+            <p>{"Active>360 makes extensive use of input forms. I took it upon myself to create input component infrastructure in a generic, object oriented manner."}</p>
             <p>{"My base unit ended up being the BaseProperty, a component that renders a label and a value."}</p>
 
             <div className="flex justify-center my-[30px]">
@@ -65,7 +65,7 @@ const A360 = () => (
                 />
             </div>
 
-            <p>{"I built several other React components on top of BaseProperty to abstract and share logic such as styling, validity, optional/required, readonly/edit, dependent inputs, loading dropdown items based on a query."}</p>
+            <p>{"I built several other React components on top of BaseProperty to abstract and share logic such as styling, validity, optional/required, readonly/edit, dependent inputs, and loading dropdown items based on a query."}</p>
 
             <div className="grid gap-[30px] grid-cols-1 lg:grid-cols-2 my-[30px]">
                 <PropertyExample
@@ -106,7 +106,7 @@ const A360 = () => (
             title={"UI DESIGN"}
             tags={["figma"]}
         >
-            <p>{"Let us revisit the ski resort example from above. In addition to the Weather Forecast Event, the resort would create a Notification which they want to send to their customers when it is a good time to ski. "}</p>
+            <p>{"Let us revisit the ski resort example from earlier. In addition to the Weather Forecast Event, the resort would create a Notification which they want to send to their customers when it is a good time to ski."}</p>
 
             <div className="flex justify-center my-[30px]">
                 <div className="flex bg-slate-50 p-5 rounded-md">
@@ -124,7 +124,7 @@ const A360 = () => (
             </div>
 
             <p>{"The task at hand was to create the UI for populating Notification field values when a Watcher conditions are met, and the Notification is sent."}</p>
-            <p>{"In the example above, we need to decide how to populate Where, When, and Inches of Snow, based on how the Watcher was triggered (whether it was because of Weather Forecast or because of some other access of 360)."}</p>
+            <p>{"In the current example, we need to decide how to populate Where, When, and Inches of Snow, based on how the Watcher was triggered (whether it was because of Weather Forecast or because of some other access of 360)."}</p>
 
             <div className="flex justify-center my-[30px]">
                 <div className="flex bg-slate-50 p-5 rounded-md">
@@ -134,7 +134,7 @@ const A360 = () => (
 
             <p>{"The dropdown options that appear above (Default / Weather Forecast) are fully derived from the Watcher’s Send Conditions above."}</p>
             <p>{"Because there is a one to one link between a send condition, and a ruleset definition for that condition, I decided to design a UI which more closely couples the two."}</p>
-            <p>{"The new triggers section encompasses both the former \"SEND CONDITIONS\" section, and the new ruleset definition requirement."}</p>
+            <p>{"The new triggers section encompasses both the \"SEND CONDITIONS\" section, and the new ruleset definition requirement."}</p>
 
             <div className="flex justify-center my-[30px]">
                 <div className="flex bg-slate-50 p-5 rounded-md">
@@ -151,20 +151,20 @@ const A360 = () => (
                 </div>
             </div>
 
-            <p>{"I made variations of this design in order to highlight different text options which may improve readability, how longer conditions fit into the UI, and how we would present warnings to the user."}</p>
+            <p>{"I made variations of this design in order to highlight how we would present warnings to the user, how longer conditions fit into the UI, and how different text options which may improve readability."}</p>
 
             <div className="flex justify-center my-[30px]">
                 <div className="flex flex-col items-center gap-[30px] bg-slate-50 p-5 rounded-md">
                     <div className={"text-sm text-slate-400"}>
-                        {"Variation 1: shows user warnings"}
+                        {"Variation 1 shows user warnings"}
                     </div>
                     <img className="max-w-[1100px] w-10/12" src={improved_v2} alt={"alt"} />
                     <div className={"text-sm text-slate-400"}>
-                        {"Variation 2: shows larger send condition on the Vermont Weather Forecast trigger"}
+                        {"Variation 2 shows larger send condition on the Vermont Weather Forecast trigger"}
                     </div>
                     <img className="max-w-[1100px] w-10/12" src={improved_v3} alt={"alt"} />
                     <div className={"text-sm text-slate-400"}>
-                        {"Variation 3: shows different wording"}
+                        {"Variation 3 shows a different layout"}
                     </div>
                     <img className="max-w-[1300px] w-full" src={improved_v4} alt={"alt"} />
                 </div>

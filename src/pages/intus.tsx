@@ -44,7 +44,7 @@ const Intus = () => (
             tags={[]}
         >
 
-            <p>{"All over the world, elderly are in need of physical and mental care. Elders that would prefer to receive help in the comfort of their own home, may be blocked by the high cost of at-home care."}</p>
+            <p>{"All over the world, the elderly population is in need of physical and mental care."}</p>
             <p>{"Intus aims to enable elderly patients to schedule at home care through the use of a mobile application. Through the application the user can schedule appointments for physical assistance (i.e. preventative care and screening), and also for mental assistance (i.e. memory recalling stimulus exercises)."}</p>
 
             <div className="flex justify-center my-[30px]">
@@ -65,7 +65,8 @@ const Intus = () => (
             ]}
         >
 
-            <p>{"Through continued customer interaction and market research, I created iterative mocks of the application. For example, here is how the \"Create a care request\" flow changed over time”"}</p>
+            <p>{"Through continued customer interaction and market research, I created iterative mocks of the application."}</p>
+            <p>{"As an example, here is how the \"Create a care request\" flow changed over time"}</p>
 
             <div className="flex justify-center flex-col items-center gap-[30px] my-[30px]">
                 <AnimatedCarousel
@@ -77,10 +78,6 @@ const Intus = () => (
                     imgs={[service_v0, service_v1, service_v2, service_v3]}
                 />
                 <AnimatedCarousel
-                    label="Evolution of the availability selection page"
-                    imgs={[availability_v1, availability_v21, availability_v22, availability_v31, availability_v32]}
-                />
-                <AnimatedCarousel
                     label="Evolution of the caregiver preferences page"
                     imgs={[caregiver_v1, caregiver_v2, caregiver_v3]}
                 />
@@ -90,16 +87,15 @@ const Intus = () => (
                 />
             </div>
 
-            <p>{"Putting the final version of the \"Create a care request\" flow together:"}</p>
+            <p>{"I ended up developing a minimum viable product in Swift / Node.js."}</p>
+            <p>{"The functionality I achieved was to allow a care recipient to create an account and profile, go through the care request creation dialog, and submit it. The profile and request data for each user was stored in a database so that it persisted between login sessions."}</p>
+
             <div className="flex justify-center">
                 <AnimatedCarousel
+                    label={"Putting the final version of the \"Create a care request\" flow together:"}
                     imgs={[final_home, final1, final2, final3, final4, final5, final_review]}
                 />
             </div>
-
-            <p>{"I ended up developing a minimum viable product in Swift / Node.js."}</p>
-
-            <p>{"The functionality I achieved was to allow a care recipient to create an account and profile, go through the care request creation dialog, and submit it. The profile and request data for each user was stored in a database so that it persisted between login sessions."}</p>
 
         </DetailsSection>
 
@@ -109,7 +105,7 @@ const Intus = () => (
         >
 
             <p>{"The biggest lesson I learned from the experience was that it was too early to begin developing the application while the product was not fully defined just yet."}</p>
-            <p>{"As we continued our market research, we discovered subtle roadblocks. Speaking to more people in the industry, we got differing opinions of what the exact scope of the application should be. We also found that the public health industry is heavily regulated, which could create issues for us with our plan at the time."}</p>
+            <p>{"As we continued our market research, we got differing opinions of what the exact scope of the application should be. We also found that the public health industry is heavily regulated, which could have created issues for us with our plan at the time."}</p>
             <p>{"It would have been more worthwhile to use a Figma prototype for the purpose of demos and market research, until the product reached a more stable state."}</p>
         </DetailsSection>
 
@@ -118,8 +114,8 @@ const Intus = () => (
             tags={[]}
         >
 
-            <p>{"An important feature to add would be if we developed a patient / caregiver matching algorithm, in order to effectively recommend good caregivers to the application user. The algorithm would likely be based on a number of factors such as: location proximity, languages spoken, prior experience that a caregiver has providing certain types of assistance."}</p>
-            <p>{"We could also introduce hobbies / interests (e.g. reading, sports, film etc) on user profiles to match those and allow users to have a better idea of the personality of their patient / caregiver, before scheduling an initial visit."}</p>
+            <p>{"An important feature to add would be a caregiver / care recipient matching algorithm which would be used to effectively recommend caregivers to the user. The algorithm would likely be based on a number of factors such as: location proximity, languages spoken, prior experience that a caregiver has providing certain types of assistance."}</p>
+            <p>{"We could also introduce hobbies / interests (e.g. reading, sports, film etc) on user and caregiver profiles to allow users to have a better idea of the personality of their patient / caregiver, before scheduling an initial visit."}</p>
 
         </DetailsSection>
 
