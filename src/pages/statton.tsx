@@ -174,7 +174,7 @@ const Intus = () => (
 
             <div className="flex justify-center my-[30px]">
                 <div className="flex bg-slate-50 p-5 rounded-md flex flex-col gap-[10px]">
-                    <div className={"max-w-[900px]text-sm text-slate-400"}>
+                    <div className={"max-w-[900px] text-sm text-slate-400"}>
                         <div>Example of future Statton results page. The user has the ability to filter results, sign up using their number, view a Question Bank, and share their results.</div>
                     </div>
                     <img className="max-w-[900px] w-full" src={future} alt={"Sample Statton future page"} />
