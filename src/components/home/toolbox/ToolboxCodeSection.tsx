@@ -4,6 +4,7 @@ import ToolboxSection from "./ToolboxSection"
 const items = [
     "Typescript",
     "React.js",
+    "Svelte",
     "Swift",
     "Node.js",
     "Java",
