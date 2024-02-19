@@ -23,7 +23,7 @@ import statton_4 from "../images/statton/character/statton_4.png"
 import statton_5 from "../images/statton/character/statton_5.png"
 import statton_6 from "../images/statton/character/statton_6.png"
 
-const Intus = () => (
+const Statton = () => (
     <ProjectTemplate
         title={"STATTON"}
         role={"Full-stack Web Application Development, Product Design"}
@@ -218,4 +218,4 @@ const Intus = () => (
     </ProjectTemplate>
 )
 
-export default Intus
+export default Statton
