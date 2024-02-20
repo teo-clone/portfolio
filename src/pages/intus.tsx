@@ -151,3 +151,11 @@ const Intus = () => (
 )
 
 export default Intus
+
+export function Head() {
+    return (
+        <>
+            <title>{"Intus Care"}</title>
+        </>
+    )
+}

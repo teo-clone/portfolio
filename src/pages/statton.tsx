@@ -219,3 +219,11 @@ const Statton = () => (
 )
 
 export default Statton
+
+export function Head() {
+    return (
+        <>
+            <title>{"Statton"}</title>
+        </>
+    )
+}

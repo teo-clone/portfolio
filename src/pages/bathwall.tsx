@@ -4,19 +4,24 @@ import ProjectTemplate from "../components/project/ProjectTemplate"
 
 const Bathwall = () => (
     <ProjectTemplate
-        title={"STATTON"}
+        title={"BATHROOM WALL"}
         role={"Full-stack Web Application Development, Product Design"}
         team={"Just me"}
         briefParagraphs={[
-            "Statton is a website that poses its users with a daily multiple choice question and allows them to view how the rest of the world responded.",
+            "Bathroom wall is a web application that allows users to create a shared wall of text and image at a particular bar on a particular day",
         ]}
-        liveLink={"https://statton.netlify.app"}
+        liveLink={"https://bathwall.xyz"}
     >
         <DetailsSection
-            title={"THE IDEA"}
+            title={"INFO"}
             tags={[]}
         >
-            <p>On Statton, users answer a universal multiple choice question every day. After responding, they can view where they stand compared to the rest of the users.</p>
+            <p>
+                {"Bathroom wall is currently being developed, the best way to learn more about the project is by visiting the public "}
+                <a href="https://github.com/teo-clone/bathroom_wall" target="_blank" className="text-blue underline">github repository</a>
+            </p>
+
+
 
         </DetailsSection>
 
@@ -24,3 +29,11 @@ const Bathwall = () => (
 )
 
 export default Bathwall
+
+export function Head() {
+    return (
+        <>
+            <title>{"Bathroom Wall"}</title>
+        </>
+    )
+}

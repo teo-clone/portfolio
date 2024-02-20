@@ -7,7 +7,6 @@ import Fun from "../components/home/Fun"
 
 const HomePage = () => (
   <div>
-
     <HomeHeader />
 
     <div className="flex flex-col gap-[80px] py-[40px]">
@@ -24,6 +23,10 @@ export default HomePage
 
 export function Head() {
   return (
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <>
+      <title>Teo T</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+      <meta name="description" content="Teo Tsivranidis is a software developer and designer currently based in Brooklyn, NY. Teo Tsivranidis full legal name is Theodoros Tsivranidis." />
+    </>
   )
 }

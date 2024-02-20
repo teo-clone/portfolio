@@ -46,7 +46,7 @@ const projectProps = [
         }
     },
     {
-        // fullInfoUrl: "/bathwall",
+        fullInfoUrl: "/bathwall",
         title: "BATHROOM WALL",
         timeline: "2023 - now",
         description: "Location and time based anonymous social platform",

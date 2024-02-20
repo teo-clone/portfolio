@@ -176,3 +176,12 @@ const A360 = () => (
 )
 
 export default A360
+
+export function Head() {
+    return (
+        <>
+            <title>{"Active>360"}</title>
+            <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        </>
+    )
+}
