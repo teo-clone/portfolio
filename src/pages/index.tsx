@@ -24,10 +24,14 @@ export default HomePage
 export function Head() {
   return (
     <>
-      <title>Teo T</title>
+      <title>Teo Tsivranidis</title>
+      <meta name="og:title" content="Teo Tsivranidis" />
+      <meta name="og:site_name" content="Teo Tsivranidis" />
+
       <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-      <meta name="description" content="Teo Tsivranidis is a software developer and designer currently based in Brooklyn, NY. Teo Tsivranidis full legal name is Theodoros Tsivranidis. This site contains information about Teo Tsivranidis work experience, his interests, and his contact information." />
-      <meta name="og:description" content="Teo Tsivranidis is a software developer and designer currently based in Brooklyn, NY. Teo Tsivranidis full legal name is Theodoros Tsivranidis." />
+
+      <meta name="description" content="Teo Tsivranidis is a software developer and designer currently based in Brooklyn, NY. This site contains information about Teo Tsivranidis work experience, his interests, and his contact information." />
+      <meta name="og:description" content="Teo Tsivranidis is a software developer and designer currently based in Brooklyn, NY. This site contains information about Teo Tsivranidis work experience, his interests, and his contact information." />
     </>
   )
 }
