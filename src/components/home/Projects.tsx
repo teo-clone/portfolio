@@ -50,7 +50,7 @@ const projectProps = [
         title: "BATHROOM WALL",
         timeline: "2023 - now",
         description: "Location and time based anonymous social platform",
-        liveLink: "https://bathwall.xyz",
+        liveLink: "https://bathwall.co",
         image: {
             id: "bathwall",
             src: bathwall,

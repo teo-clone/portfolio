@@ -10,7 +10,7 @@ const Bathwall = () => (
         briefParagraphs={[
             "Bathroom wall is a web application that allows users to create a shared wall of text and image at a particular bar on a particular day",
         ]}
-        liveLink={"https://bathwall.xyz"}
+        liveLink={"https://bathwall.co"}
     >
         <DetailsSection
             title={"INFO"}
