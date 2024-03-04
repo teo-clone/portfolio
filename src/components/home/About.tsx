@@ -53,7 +53,7 @@ const About = () => {
                             {"I am a software developer and designer currently based in Brooklyn, NY."}
                         </div>
                         <div>
-                            {"I love to think about products as a process from beginning to end including the market research, prototyping, and development."}
+                            {"I am currently working independently on web applications which utilize modern frameworks and aim to ignite conversations between users."}
                         </div>
                         <div>
                             {"My most recent full time job was at Ab Initio on the Active>360 team as a full-stack developer and UI designer."}

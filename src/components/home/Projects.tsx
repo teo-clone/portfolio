@@ -14,7 +14,7 @@ const projectProps = [
     {
         fullInfoUrl: "/statton",
         title: "STATTON",
-        timeline: "2023",
+        timeline: "2023 - now",
         description: "Opinion polling, data visualization  web application",
         liveLink: "https://statton.netlify.app",
         image: {
