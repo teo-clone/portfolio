@@ -1,5 +1,6 @@
-## 🤠 Welcome
 This is a repo for teo's portfolio, currently hosted at [teo.fyi](https://teo.fyi).
+
+## 🤠 Acknowledgements
 
 The site is built as a gatsby project, with React.js / typescript / tailwind css
 
