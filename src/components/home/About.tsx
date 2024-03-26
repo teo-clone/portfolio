@@ -50,10 +50,10 @@ const About = () => {
                             {"My name is Theodoros Tsivranidis. My friends call me Teo."}
                         </div>
                         <div>
-                            {"I am a software developer and designer currently based in Brooklyn, NY."}
+                            {"I am a full-stack software developer living in Brooklyn, NY."}
                         </div>
                         <div>
-                            {"I am currently working independently on web applications which utilize modern frameworks and aim to ignite conversations between users."}
+                            {"I am currently working independently on web applications which utilize modern frameworks and libraries."}
                         </div>
                         <div>
                             {"My most recent full time job was at Ab Initio on the Active>360 team as a full-stack developer and UI designer."}

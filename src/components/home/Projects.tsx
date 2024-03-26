@@ -5,6 +5,7 @@ import a360_combo from "../../images/a360/a360_combo.png"
 import intus_combo from "../../images/intus/intus_combo.png"
 import statton from "../../images/statton/statton.png"
 import bathwall from "../../images/bathwall/bathwall.png"
+import ps2 from "../../images/ps2-nostalgia/ps2-nostalgia.png"
 
 import GatsbyLinkButton from "../GatsbyLinkButton"
 import ExternalLinkButton from "../ExternalLinkButton"
@@ -12,11 +13,35 @@ import ExternalLinkButton from "../ExternalLinkButton"
 
 const projectProps = [
     {
-        fullInfoUrl: "/statton",
+        title: "BATHROOM WALL",
+        timeline: "JAN 2024 - NOW",
+        description: "Location and time based anonymous social platform",
+        liveLink: "https://bathwall.co",
+        gitRepo: "https://github.com/teo-clone/bathroom_wall",
+        image: {
+            id: "bathwall",
+            src: bathwall,
+            alt: "Image with examples of home screen and bar pages."
+        }
+    },
+    {
+        title: "PS2 NOSTALGIA",
+        timeline: "MAR 2024",
+        description: "Nostalgic PS2 graphic image generator",
+        liveLink: "https://ps2nostalgia.win",
+        gitRepo: "https://github.com/sobu-co/ps2-nostalgia",
+        image: {
+            id: "ps2",
+            src: ps2,
+            alt: "Image with example generation."
+        }
+    },
+    {
         title: "STATTON",
-        timeline: "2023 - now",
+        timeline: "FEB 2024",
         description: "Opinion polling, data visualization  web application",
         liveLink: "https://statton.netlify.app",
+        gitRepo: "https://github.com/teo-clone/statton",
         image: {
             id: "statton",
             src: statton,
@@ -45,18 +70,6 @@ const projectProps = [
             alt: "Image with examples of home, care request details, and new care request screens"
         }
     },
-    {
-        fullInfoUrl: "/bathwall",
-        title: "BATHROOM WALL",
-        timeline: "2023 - now",
-        description: "Location and time based anonymous social platform",
-        liveLink: "https://bathwall.co",
-        image: {
-            id: "bathwall",
-            src: bathwall,
-            alt: "Image with examples of home screen and bar pages."
-        }
-    },
 ]
 
 const Projects = () => (
@@ -73,6 +86,9 @@ const Projects = () => (
                     />}
                 {props.liveLink &&
                     <ExternalLinkButton label={"Live Link"} to={props.liveLink} />
+                }
+                {props.gitRepo &&
+                    <ExternalLinkButton label={"Git Repo"} to={props.gitRepo} />
                 }
             </ProjectThumbnail>
         )}

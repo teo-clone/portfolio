@@ -1,12 +1,10 @@
 import * as React from "react"
 
 import greek_visions from "../../images/fun/greek_visions.png"
-import collage from "../../images/fun/collage/lizard_collage.png"
 import la_luna from "../../images/fun/la_luna.png"
 import cover from "../../images/fun/playlists.gif"
 import shelves from "../../images/fun/shelves.gif"
 import collages from "../../images/fun/collages.gif"
-
 
 import ExternalLinkButton from "../ExternalLinkButton"
 import ProjectThumbnail from "./ProjectThumbnail"
@@ -24,24 +22,14 @@ const funProjectProps = [
         },
         externalLinks: [
             {
-                label: "Figma Prototype",
-                to: "https://www.figma.com/proto/DDmwBH9rQIG9p717VWtwen/greek_visions?type=design&node-id=77-223&scaling=min-zoom&page-id=77%3A223&starting-point-node-id=77%3A310"
+                label: "Figma",
+                to: "https://www.figma.com/file/DDmwBH9rQIG9p717VWtwen/greek_visions?type=design&node-id=77-223&mode=design"
             },
             {
                 label: "@greekvisions",
                 to: "https://www.instagram.com/greekvisions/"
             },
         ]
-    },
-    {
-        title: "DIY",
-        timeline: "",
-        description: "I want to learn how to make more things with my hands. I recently made a set of bedside shelves. I am now working on re-upholstering my director's chair.",
-        image: {
-            id: "shelves",
-            src: shelves,
-            alt: "Photo of materials used to make shelves"
-        },
     },
     {
         title: "PLAYLIST COVERS",
@@ -78,6 +66,16 @@ const funProjectProps = [
             src: collages,
             alt: "Example image of a collage I've made"
         }
+    },
+    {
+        title: "DIY",
+        timeline: "",
+        description: "I want to learn how to make more things with my hands. I recently made a set of bedside shelves. I am now working on re-upholstering my director's chair.",
+        image: {
+            id: "shelves",
+            src: shelves,
+            alt: "Photo of materials used to make shelves"
+        },
     },
 ]
 
